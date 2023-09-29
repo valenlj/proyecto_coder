@@ -9,26 +9,49 @@
     <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header >
-            <nav class="header__nav">
-                <div class="header__nav__div__left">
-                    <a href="#">
-                        <img class="header__nav__div__left__a__img" src="./assets/img/logocuatro.png" alt="Logo">
-                    </a>
-                </div>
-                <ul class="header__nav__div__ul__right">
-                    <li class=""><a class="jet header__nav__ul__list font-nav" href="#">Inicio</a></li>
-                    <li class=""><a class="jet header__nav__ul__list font-nav" href="./pages/productos.html">Productos</a></li>
-                    <li class=""><a class="jet header__nav__ul__list font-nav" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li class=""><a class="jet header__nav__ul__list font-nav" href="./pages/descubre.html">Descubre</a></li>
-                    <li class=""><a class="jet header__nav__ul__list font-nav" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-                <div class="header__nav__div__right">
-                    <a href="#puntosdeventa ">
-                        <i class="fa-solid fa-map-location-dot icon"></i>
-                    </a>
-                </div>
-            </nav>
+        <header class="">
+            <div class="escritorio header__nav">
+                <nav class="header__nav">
+                    <div class="header__nav__div__left">
+                        <a href="#">
+                            <img class="header__nav__div__left__a__img" src="./assets/img/logocuatro.png" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="header__nav__div__ul__right">
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="#">Inicio</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="./pages/productos.html">Productos</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="./pages/nosotros.html">Nosotros</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="./pages/descubre.html">Descubre</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="header__nav__div__right">
+                        <a href="#puntosdeventa ">
+                            <i class="fa-solid fa-map-location-dot icon"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="celular">
+                <nav class="navbar navbar-expand-lg navbar-light cream">
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="./assets/img/logocuatro.png" width="100" alt="Logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                          <li class="nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+                          <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                          <li class="nav-item"><a class="nav-link" href="./pages/descubre.html">Descubre</a></li>
+                          <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </header>
         <main>
             <section class="inicio__main__section__first" >
@@ -55,25 +78,32 @@
             </section>
             <section id="puntosdeventa" class="inicio__main__section__third">
                 <div class="inicio__main__section__third__div">
-                    <h2 class="subtitle antiflash">Puntos de venta</h2>
-                    <iframe class="inicio__main__section__third__map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3286990.9161133636!2d-58.95538331875003!3d-36.43454174612731!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1693515443339!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="subtext jet inicio__main__section__third__div">
-                    <li class="inicio__main__section__third__div__list"><h3 class="h3-text">Naturaleza y Sabores</h3>
-                        Calle Verde 345, Olivos</li>
-                    <li class="inicio__main__section__third__div__list"><h3 class="h3-text">Arte y Delicadeza</h3>
-                        Plaza de Arte 678, La Plata</li>
-                    <li class="inicio__main__section__third__div__list"><h3 class="h3-text">Rincón Serrano</h3>
-                        Calle Montaña 123, Tandil</li>
-                    <li class="inicio__main__section__third__div__list"><h3 class="h3-text">Encanto Provincial</h3>
-                        Avenida Colonial 456, San Isidro</li>
-                    <li class="inicio__main__section__third__div__list"><h3 class="h3-text">Aires Auténticos</h3>
-                        Calle Tradición 789, Mar del Plata</li>
-                    <li class="inicio__main__section__third__div__list"><h3 class="h3-text">Gastronomía Local</h3>
-                        Paseo Gastronómico 234, Bahía Blanca</li>
-                </div>
+                    <div class="inicio__main__section__third__div__uno">
+                        <h2 class="subtitle antiflash">Puntos de venta</h2>
+                        <iframe class="inicio__main__section__third__uno__map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3286990.9161133636!2d-58.95538331875003!3d-36.43454174612731!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1693515443339!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="inicio__main__section__third__div__li">
+                        <div class="subtext jet inicio__main__section__third__div__li__uno">
+                            <li class="inicio__main__section__third__div__uno__list"><h3 class="h3-text">Naturaleza y Sabores</h3>
+                                Calle Verde 345, Olivos</li>
+                            <li class="inicio__main__section__third__div__uno__list"><h3 class="h3-text">Arte y Delicadeza</h3>
+                                Plaza de Arte 678, La Plata</li>
+                            <li class="inicio__main__section__third__div__uno__list"><h3 class="h3-text">Rincón Serrano</h3>
+                                Calle Montaña 123, Tandil</li>
+                        </div>
+                        <div class="subtext jet inicio__main__section__third__div__li__dos">
+                            <li class="inicio__main__section__third__div__dos__list"><h3 class="h3-text">Encanto Provincial</h3>
+                                Avenida Colonial 456, San Isidro</li>
+                            <li class="inicio__main__section__third__div__dos__list"><h3 class="h3-text">Aires Auténticos</h3>
+                                Calle Tradición 789, Mar del Plata</li>
+                            <li class="inicio__main__section__third__div__dos__list"><h3 class="h3-text">Gastronomía Local</h3>
+                                Paseo Gastronómico 234, Bahía Blanca</li>
+                        </div>
+                    </div>
                 </div>
                 <div class="inicio__main__section__third__div__img">
                     <img class="inicio__main__section__third__div__img__abejaflor" src="./assets/img/abejaflor.png" alt="Abeja en flor">
+                </div>
                 </div>
             </section>
             <section class="inicio__main__section__fourth" >
@@ -88,14 +118,20 @@
             </section>
         </main>
         <footer>
-            <nav>
+            <nav class="footer__nav">
                 <ul class="footer__nav__ul">
-                    <li><a class="antiflash footer__nav__ul__list" href="#">Inicio</a></li>
-                    <li><a class="antiflash footer__nav__ul__list" href="./pages/productos.html">Productos</a></li>
-                    <li><a class="antiflash footer__nav__ul__list" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="antiflash footer__nav__ul__list" href="./pages/descubre.html">Descubre</a></li>
-                    <li><a class="antiflash footer__nav__ul__list" href="./pages/contacto.html">Contacto</a></li>
+                    <li footer__nav__ul__list><a class="antiflash footer__nav__ul__list__a__red" href="#">Inicio</a></li>
+                    <li footer__nav__ul__list><a class="antiflash footer__nav__ul__list__a__blue" href="./pages/productos.html">Productos</a></li>
+                    <li footer__nav__ul__list><a class="antiflash footer__nav__ul__list__a__yellow" href="./pages/nosotros.html">Nosotros</a></li>
+                    <li footer__nav__ul__list><a class="antiflash footer__nav__ul__list__a__red" href="./pages/descubre.html">Descubre</a></li>
+                    <li footer__nav__ul__list><a class="antiflash footer__nav__ul__list__a__blue" href="./pages/contacto.html">Contacto</a></li>
                 </ul>
+                <div class="footer__nav__icon">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram iconInstagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin iconLinkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook iconFacebook"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp iconWhatsapp"></i></a>
+                </div>
             </nav>
         </footer>
         <script src="./js/bootstrap.bundle.min.js"></script>
