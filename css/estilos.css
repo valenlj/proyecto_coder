@@ -381,11 +381,10 @@ main{
 /**Section 3**/
 .inicio__main__section__third{
     background-color: #2176AE;
-    
     padding-top: 10rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 .inicio__main__section__third__div{
     display: flex;
@@ -399,6 +398,7 @@ main{
 .inicio__main__section__third__div__uno{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .inicio__main__section__third__uno__map{
     margin-bottom: 1rem;
@@ -465,6 +465,7 @@ main{
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .inicio__main__section__fourth__div__img{
     display: flex;
