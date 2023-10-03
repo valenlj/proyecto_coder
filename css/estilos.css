@@ -319,6 +319,7 @@ main{
 }
 .inicio__main__section__first__article{
     margin: 2rem;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -392,6 +393,7 @@ main{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     gap: 10px;
     margin-bottom: 2rem;
     padding-bottom: 5rem;
@@ -399,14 +401,19 @@ main{
 .inicio__main__section__third__div__uno{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 .inicio__main__section__third__uno__map{
     margin-bottom: 1rem;
     border-radius: 10px;
+    width: 600px;
+    height: 450px;
 }
 .inicio__main__section__third__div__li{
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .inicio__main__section__third__div__li__uno{
     display: flex;
@@ -443,9 +450,8 @@ main{
 }
 .inicio__main__section__third__div__img__abejaflor{
     display: flex;
-    width: 500px;
+    width: 700px;
     height: 700px;
-    overflow: hidden;
 }
 
 /**Section 4**/
@@ -461,7 +467,8 @@ main{
 
 }
 .inicio__main__section__fourth__article{
-    margin: 6rem;
+    margin-top: 13rem;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -472,7 +479,6 @@ main{
     display: flex;
     width: 850px;
     height: 850px;
-    overflow: hidden;
 }
 
 /**Página de productos**/
@@ -860,5 +866,60 @@ main{
    }
    .celular{
          display: none;
+
    }
+}
+@media screen and (max-width: 768px){
+    
+   .inicio__main__section__third__uno__map{
+        width: 300px;
+        height: 150px;
+        
+   }
+    .inicio__main__section__third__div__li{
+        align-items: center;
+        flex-direction: column;
+    }
+    .inicio__main__section__third__div__img__abejaflor{
+        width: 300px;
+        height: 400px;
+    }
+    .inicio__main__section__fourth__div__img{
+        width: 340px;
+        height: 280px;
+    }
+    .inicio__main__section__fourth__article{
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+    .inicio__main__section__second__article{
+        padding: 1.5rem;
+        margin: 2rem;
+        .subtitle{
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
+    .inicio__main__section__second{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .display{
+        width: 370px;
+    }
+    .inicio__main__section__second__article__img__flor{
+        width: 200px;
+        height: 310px;
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+    .inicio__main__section__second__article__img__sahumador{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .inicio__main__section__first__article{
+        margin-top: 0;
+        margin-right: 0;
+    }
 }
