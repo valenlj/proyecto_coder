@@ -4,67 +4,102 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Descubre | Pikki</title>
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav class="header__nav">
-                <div class="header__nav__div__left">
-                    <a href="../index.html">
-                        <img src="../assets/img/logocuatro.png" alt="Logo">
-                    </a>
-                </div>
-                <ul class="header__nav__div__ul__right">
-                    <li><a class="jet header__nav__ul__list font-nav" href="../index.html">Inicio</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="productos.html">Productos</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="#">Descubre</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="header__nav__div__right">
-                    <a href="../index.html#sectionpuntos">
-                        <i class="fa-solid fa-map-location-dot icon"></i>
-                    </a>
-                </div>
-            </nav>
+        <header class="container-fluid">
+            <div class="escritorio header__nav">
+                <nav class="header__nav">
+                    <div class="header__nav__div__left">
+                        <a href="../index.html">
+                            <img class="header__nav__div__left__a__img" src="../assets/img/logocuatro.png" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="header__nav__div__ul__right">
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="../index.html">Inicio</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="productos.html">Productos</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="nosotros.html">Nosotros</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="#">Descubre</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="header__nav__div__right">
+                        <a href="#puntosdeventa ">
+                            <i class="fa-solid fa-map-location-dot icon"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="celular">
+                <nav class="navbar navbar-expand-lg navbar-light cream">
+                    <div class="container">
+                      <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logocuatro.png" width="100" alt="Logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Descubre</a></li>
+                          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </header>
-        <main>
+        <main class="container">
             <div class="descubre__main__div">
                 <h1 class="title">Secretos de la colmena</h1>
                 <p class="text">Bienvenidos a esta sección llena de curiosidades y asombrosos secretos sobre estos incansables polinizadores. En este recorrido, te invitamos a explorar las fascinantes danzas, el zumbido misterioso y los talentos musicales de las abejas. Desde su visión única hasta su habilidad para mantenerse calientes en invierno, te garantizamos que te sorprenderás con cada detalle que descubras. ¡Las abejas son más sorprendentes de lo que jamás imaginaste! ¡Vamos a empezar el viaje!</p>
             </div>
-            <article class="descubre__main__article__one">
-                <img src="" alt="">
-                <h2 class="d-text">¡Baile de la Comida!</h2>
-                <p class="text">Las abejas melíferas tienen un baile especial para indicar la ubicación de la fuente de néctar. Si la comida está cerca, realizan una danza redonda. Si está más lejos, una danza en forma de ocho. ¡Imagina una fiesta de baile en la colmena!</p>
-            </article>
-            <article class="descubre__main__article__two">
-                <img src="" alt="">
-                <h2 class="d-text">Abejas DJ</h2>
-                <p class="text">Las abejas son fanáticas de la música. Algunos estudios sugieren que la música clásica cerca de las colmenas puede aumentar la producción de miel. ¡Parece que las abejas también tienen gustos musicales!</p>
-            </article>
-            <article class="descubre__main__article__three">
-                <img src="" alt="">
-                <h2 class="d-text">La Abeja "Buzz"</h2>
-                <p class="text">¿Sabías que el zumbido de una abeja es en realidad una canción? Las abejas obreras producen diferentes tipos de zumbidos para comunicarse y coordinar sus actividades. ¡Podríamos decir que cada colmena tiene su propia pista de baile zumbante!</p>
-            </article>
-            <article class="descubre__main__article__four">
-                <img src="" alt="">
-                <h2 class="d-text">Ojo Complejo</h2>
-                <p class="text">Las abejas tienen ojos compuestos que les permiten ver en espectros de colores diferentes a los humanos. Pueden ver ultravioleta, lo que les ayuda a encontrar flores llenas de néctar que tienen "señales secretas" invisibles para nosotros.</p>
-            </article>
-            <article class="descubre__main__article__five">
-                <img src="" alt="">
-                <h2 class="d-text">Máquinas de Calor</h2>
-                <p class="text">En invierno, las abejas forman una "pelota de calor" en la colmena para mantenerse calientes. ¡Son como pequeñas estufas vivientes! Rotan constantemente entre el interior y el exterior de la pelota para mantener una temperatura constante.</p>
-            </article>
-            <article class="descubre__main__article__six">
-                <img src="" alt="">
-                <h2 class="d-text">Sin Abejas, ¡Adiós a la Comida!</h2>
-                <p class="text">Las abejas son como los superhéroes del mundo de la comida. Su trabajo de polinización ayuda a que muchas frutas y verduras crezcan. Si desaparecieran, tendríamos menos cosas deliciosas en nuestros platos. ¡Viva las abejas y viva la comida!"</p>
-            </article>
+            <div class="row justify-content-xl-end justify-content-xs-center">
+                <article class="descubre__main__article__one col-xl-8 col-xs-12">
+                    <img src="" alt="">
+                    <h2 class="d-text">¡Baile de la Comida!</h2>
+                    <p class="text">Las abejas melíferas tienen un baile especial para indicar la ubicación de la fuente de néctar. Si la comida está cerca, realizan una danza redonda. Si está más lejos, una danza en forma de ocho. ¡Imagina una fiesta de baile en la colmena!</p>
+                </article>
+            </div>
+            <div class="row justify-content-xl-start justify-content-xs-center">
+                <article class="descubre__main__article__two col-xl-8 col-xs-12">
+                    <img src="" alt="">
+                    <h2 class="d-text">Abejas DJ</h2>
+                    <p class="text">Las abejas son fanáticas de la música. Algunos estudios sugieren que la música clásica cerca de las colmenas puede aumentar la producción de miel. ¡Parece que las abejas también tienen gustos musicales!</p>
+                </article>
+            </div>
+            <div class="row justify-content-xl-end justify-content-xs-center">
+                <article class="descubre__main__article__three col-xl-8 col-xs-12">
+                    <img src="" alt="">
+                    <h2 class="d-text">La Abeja "Buzz"</h2>
+                    <p class="text">¿Sabías que el zumbido de una abeja es en realidad una canción? Las abejas obreras producen diferentes tipos de zumbidos para comunicarse y coordinar sus actividades. ¡Podríamos decir que cada colmena tiene su propia pista de baile zumbante!</p>
+                </article>
+            </div>            
+            <div class="row justify-content-xl-start justify-content-xs-center">
+                <article class="descubre__main__article__four col-xl-8 col-xs-12">
+                    <img src="" alt="">
+                    <h2 class="d-text">Ojo Complejo</h2>
+                    <p class="text">Las abejas tienen ojos compuestos que les permiten ver en espectros de colores diferentes a los humanos. Pueden ver ultravioleta, lo que les ayuda a encontrar flores llenas de néctar que tienen "señales secretas" invisibles para nosotros.</p>
+                </article>
+            </div>
+            <div class="row justify-content-xl-end justify-content-xs-center">
+                <article class="descubre__main__article__five col-xl-8 col-xs-12">
+                    <img src="" alt="">
+                    <h2 class="d-text">Máquinas de Calor</h2>
+                    <p class="text">En invierno, las abejas forman una "pelota de calor" en la colmena para mantenerse calientes. ¡Son como pequeñas estufas vivientes! Rotan constantemente entre el interior y el exterior de la pelota para mantener una temperatura constante.</p>
+                </article>
+            </div>
+            <div class="row justify-content-xl-start justify-content-xs-center">
+                <article class="descubre__main__article__six col-xl-8 col-xs-12">
+                    <img src="" alt="">
+                    <h2 class="d-text">Sin Abejas, ¡Adiós a la Comida!</h2>
+                    <p class="text">Las abejas son como los superhéroes del mundo de la comida. Su trabajo de polinización ayuda a que muchas frutas y verduras crezcan. Si desaparecieran, tendríamos menos cosas deliciosas en nuestros platos. ¡Viva las abejas y viva la comida!"</p>
+                </article>
+            </div>
         </main>
         <footer>
             <nav class="footer__nav">
@@ -83,6 +118,6 @@
                 </div>
             </nav>
         </footer>
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

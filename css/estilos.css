@@ -665,7 +665,10 @@ main{
 
 /**Página descubre**/
 .descubre__main__div{
-    margin: 6rem;
+    margin: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     text-align: left;
 }
 .descubre__main__article__one{
@@ -677,7 +680,7 @@ main{
     align-items: flex-end;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 6rem;
+    margin: 1rem;
 }
 .descubre__main__article__two{
     background-color: #DB5461;
@@ -686,7 +689,7 @@ main{
     border-radius: 15px;
     display: flex;  
     flex-wrap: wrap;  
-    margin: 6rem;
+    margin: 1rem;
 }
 .descubre__main__article__three{
     background-color: #FFE24F;
@@ -697,7 +700,7 @@ main{
     align-items: flex-end;
     flex-wrap: wrap;
     flex-direction: column; 
-    margin: 6rem;
+    margin: 1rem;
 }
 .descubre__main__article__four{
     background-color: #2176AE;
@@ -706,7 +709,7 @@ main{
     border-radius: 15px;
     display: flex; 
     flex-wrap: wrap;    
-    margin: 6rem; 
+    margin: 1rem; 
 }
 .descubre__main__article__five{
     background-color: #DB5461;
@@ -717,7 +720,7 @@ main{
     align-items: flex-end;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 6rem;
+    margin: 1rem;
 }
 .descubre__main__article__six{
     background-color: #FFE24F;
@@ -726,7 +729,7 @@ main{
     border-radius: 15px;
     display: flex;  
     flex-wrap: wrap;  
-    margin: 6rem;
+    margin: 1rem;
 }
 
 /**Página de contacto**/
