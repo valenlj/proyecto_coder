@@ -4,78 +4,110 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nosotros | Pikki</title>
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav class="header__nav">
-                <div class="header__nav__div__left">
-                    <a href="../index.html">
-                        <img src="../assets/img/logocuatro.png" alt="Logo">
-                    </a>
-                </div>
-                <ul class="header__nav__div__ul__right">
-                    <li><a class="jet header__nav__ul__list font-nav" href="../index.html">Inicio</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="productos.html">Productos</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="#">Nosotros</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="descubre.html">Descubre</a></li>
-                    <li><a class="jet header__nav__ul__list font-nav" href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="header__nav__div__right">
-                    <a href="../index.html#sectionpuntos">
-                        <i class="fa-solid fa-map-location-dot icon"></i>
-                    </a>
-                </div>
-            </nav>
+        <header class="container-fluid">
+            <div class="escritorio header__nav">
+                <nav class="header__nav">
+                    <div class="header__nav__div__left">
+                        <a href="../index.html">
+                            <img class="header__nav__div__left__a__img" src="../assets/img/logocuatro.png" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="header__nav__div__ul__right">
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="../index.html">Inicio</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="productos.html">Productos</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="#">Nosotros</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="descubre.html">Descubre</a></li>
+                        <li class="header__nav__ul__list"><a class="jet header__nav__ul__list__a font-nav" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="header__nav__div__right">
+                        <a href="#puntosdeventa ">
+                            <i class="fa-solid fa-map-location-dot icon"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="celular">
+                <nav class="navbar navbar-expand-lg navbar-light cream">
+                    <div class="container">
+                      <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logocuatro.png" width="100" alt="Logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                          <li class="nav-item"><a class="nav-link" href="descubre.html">Descubre</a></li>
+                          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </header>
-        <main>
-            <Section>
+        <main class="container-fluid p-0">
+            <div>
                 <h1 class="title nosotros__main__section__first__h1">Nuestro legado apícola</h1>
-                <div class="nosotros__main__section__first__div__principal">
-                    <img class="nosotros__main__section__first__div__img__principal__nosotros" src="../assets/img/nosotros.png" alt="Nosotros">
+            </div>
+            <div class="nosotros__main__section__first__div__principal row">
+                <div class="col-xl-6 col-xs-6">
+                    <img class="nosotros__main__section__first__div__img__principal__nosotros img-fluid" src="../assets/img/nosotros.png" alt="Nosotros">
+                </div>
+                <div class="col-xl-6 col-xs-6">
                     <p class="text">Hace décadas, en los tranquilos campos del interior de la provincia de Buenos Aires, nació Pikki, una pequeña empresa que lleva la esencia de la naturaleza directamente a tus sentidos. Fundada por Raymundo Novoa y su hija Mirta Novoa, dos apasionados apicultores, Pikki se convirtió en el resultado de una búsqueda incansable por compartir el regalo de la miel pura y de alta calidad con el mundo.
                     Todo comenzó con una colmena y una visión. Mirta y Raymundo se unieron para crear un lugar donde la apicultura no solo fuera una actividad, sino una forma de vida. Inspirados por el mágico baile de las abejas entre las flores y el increíble proceso de transformación de néctar en oro líquido, se comprometieron a establecer prácticas sostenibles y respetuosas con la naturaleza.</p>
                 </div>
-                <div class="nosotros__main__section__first__div_secundario">
-                    <img class="nosotros__main__section__first__div__img__secundario__nosotros" src="" alt="Nosotros">
-                    <p class="text">A lo largo de los años, Pikki ha crecido, pero su compromiso con la calidad y autenticidad sigue siendo el mismo. Cada tarro de miel es el resultado de una dedicación inquebrantable a la artesanía apícola y a la preservación de la biodiversidad local. Desde la dulce miel de acacia que captura la delicadeza de la primavera hasta la profunda miel de bosque que evoca los secretos del entorno natural, Pikki se esfuerza por brindar experiencias únicas a través de sus productos.
-                    Hoy en día, el apasionado equipo liderado por Raúl, honra la memoria y el legado de los fundadores, Mirta y Raymundo, quienes en su compromiso incansable con la naturaleza y la apicultura dejaron una huella imborrable. Cada tarro de miel que lleva la etiqueta de Pikki es un tributo a la visión y el amor que ellos depositaron en cada colmena.</p>    
-                </div>            
-            </Section>
-            <div class="nosotros__main__div">
-                <h2 class="title2 ">El secreto detrás de nuestra miel</h2>
             </div>
-            <Section class="nosotros__main__section__second">
-                <article class="nosotros__main__section__second__article__red">
+            <div class="nosotros__main__section__first__div_secundario row">
+                <div class="col-xl-6">
+                <img class="nosotros__main__section__first__div__img__secundario__nosotros img-fluid" src="" alt="Nosotros">
+                </div>
+                <div class="col-xl-6">
+                <p class="text">A lo largo de los años, Pikki ha crecido, pero su compromiso con la calidad y autenticidad sigue siendo el mismo. Cada tarro de miel es el resultado de una dedicación inquebrantable a la artesanía apícola y a la preservación de la biodiversidad local. Desde la dulce miel de acacia que captura la delicadeza de la primavera hasta la profunda miel de bosque que evoca los secretos del entorno natural, Pikki se esfuerza por brindar experiencias únicas a través de sus productos.
+                Hoy en día, el apasionado equipo liderado por Raúl, honra la memoria y el legado de los fundadores, Mirta y Raymundo, quienes en su compromiso incansable con la naturaleza y la apicultura dejaron una huella imborrable. Cada tarro de miel que lleva la etiqueta de Pikki es un tributo a la visión y el amor que ellos depositaron en cada colmena.</p>   
+                </div> 
+            </div>
+            <div class="nosotros__main__div">
+                <h2 class="title2">El secreto detrás de nuestra miel</h2>
+            </div>
+            <div class="nosotros__main__section__second row">
+                <article class="nosotros__main__section__second__article__red col-xl-2">
                     <h3 class="fontH">Recolección</h3>
                     <img src="" alt="">
                     <p class="fontP">Nuestra aventura comienza en el hermoso paisaje donde nuestras colmenas prosperan. Durante la etapa de recolección, nuestros apicultores expertos trabajan en estrecha armonía con las abejas, recolectando el néctar de las flores más exquisitas. Este proceso es fundamental para asegurar la pureza y calidad de nuestra miel. Cada gota de néctar es recogida con cuidado y respeto por la naturaleza.</p>
                 </article>
-                <article class="nosotros__main__section__second__article__yellow">         
+                <article class="nosotros__main__section__second__article__yellow col-xl-2">         
                     <h3 class="fontH">Extracción</h3>       
                     <img src="" alt="">
                     <p class="fontP">Una vez que las abejas han hecho su trabajo y transformado el néctar en deliciosa miel, llega el momento de la extracción. En nuestras instalaciones, el equipo de producción utiliza métodos suaves y no invasivos para separar la miel de los panales. Esto garantiza que conservemos todas las propiedades naturales y beneficiosas de la miel.</p>
                 </article>
-                <article class="nosotros__main__section__second__article__blue">
+                <article class="nosotros__main__section__second__article__blue col-xl-2">
                     <h3 class="fontH">Filtración</h3>
                     <img src="" alt="">
                     <p class="fontP">La pureza es esencial para nosotros. Después de la extracción, la miel pasa por un proceso de filtración cuidadoso para eliminar cualquier impureza o partícula no deseada. Esto asegura que cada tarro de miel que llega a tu hogar esté limpio y claro, listo para disfrutar.</p>
                 </article>
-                <article class="nosotros__main__section__second__article__yellow">
+                <article class="nosotros__main__section__second__article__yellow col-xl-2">
                     <h3 class="fontH">Envasado</h3>
                     <img src="" alt="">
                     <p class="fontP">La miel recién extraída es envasada con cariño en nuestros tarros distintivos. Cada etiqueta lleva consigo la historia de nuestra empresa y el esfuerzo dedicado a cada lote de miel que producimos. Nuestros tarros son un tributo a la calidad y la dedicación que ponemos en cada paso del proceso de producción.</p>
                 </article>
-                <article class="nosotros__main__section__second__article__red">
+                <article class="nosotros__main__section__second__article__red col-xl-2">
                     <h3 class="fontH">Distribución</h3>
                     <img src="" alt="">
                     <p class="fontP">Finalmente, nuestras mieles, ricas en sabor y nutrientes, están listas para llegar a tu mesa. Trabajamos con distribuidores de confianza y tiendas locales para asegurarnos de que puedas disfrutar de la miel más fresca y deliciosa en cada bocado. Cada tarro es un testimonio de nuestro compromiso con la excelencia en la producción de miel.</p>
                 </article>
-            </Section>
+            </div>
             <div class="nosotros__main__div__video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-hWyNRWAaUg?si=nw7Zwwk9dq2LgQIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> 
             </div>
         </main>
         <footer>
@@ -95,6 +127,6 @@
                 </div>
             </nav>
         </footer>
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
