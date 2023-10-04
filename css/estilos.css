@@ -735,7 +735,6 @@ main{
 /**Página de contacto**/
 .contacto__main{
     margin: 6rem;
-    margin-left: 10rem;
 }
 .contacto__main__form{
     display: flex;
@@ -800,6 +799,10 @@ main{
     border: 1px solid #2B2B2B;
     background: #EBEBEB;
     box-shadow: 4px 4px 0px -1px #000;
+}
+.contacto__main__img{
+    width: auto;
+    display: flex;
 }
 /**Botones en la página de contacto**/
 .contacto__main__div__btn{
@@ -962,5 +965,17 @@ main{
     .nosotros__main__div__video{
         margin: 1rem;
         padding: 1rem;
+    }
+
+    .contacto__main{
+        margin: 3rem 0;
+
+    }
+    .contacto__main__div__btn{
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    .contacto__main__img{
+        display: none;
     }
 }
