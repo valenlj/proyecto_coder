@@ -485,13 +485,13 @@ main{
 
 /**Introducción a la página**/
 .productos__main__div{
-    margin: 6rem;
+    padding: 4rem;
 }
 
 /**Productos**/
 .productos__main__section{
-    margin: 7rem;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -500,19 +500,19 @@ main{
     text-align: left;
     background-color: #FFE24F;
     border-radius: 30px;
-    height: 550px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    justify-content: space-evenly;
 }
-.productos__main__section__article__first__img{
+.productos__main__section__article__img{
     display: flex;
     width: 150px;
-    height: 230px;
+    height: 230px;/**
     overflow: hidden;
-    margin-left: 70px;
+    margin-left: 70px;**/
 }
 .productos__main__section__article__second{
     margin: 1rem;
@@ -520,11 +520,11 @@ main{
     background-color: #DB5461;
     border-radius: 30px;
     display: flex;
-    height: 550px;
     padding: 20px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    justify-content: space-evenly;
 }
 .productos__main__section__article__third{
     margin: 1rem;
@@ -532,11 +532,11 @@ main{
     background-color: #FFE24F;
     border-radius: 30px;
     display: flex;
-    height: 550px;
     padding: 20px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    justify-content: space-evenly;
 }
 .productos__main__section__article__fourth{    
     margin: 1rem;
@@ -544,21 +544,20 @@ main{
     background-color: #DB5461;
     border-radius: 30px;
     display: flex;
-    height: 550px;
     padding: 20px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    justify-content: space-evenly;
 }
-.productos__main__section__article__first__display{
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
+.productos__main__section__div{
+    display: flex;
+    flex-direction: row;
 }
 
 /**Compra mayorista**/
-.m-text{
-    margin: 6rem;
+.productos__main__section__one{
+    padding: 4rem;
 }
 
 /**Página de Nosotros**/
@@ -921,5 +920,11 @@ main{
     .inicio__main__section__first__article{
         margin-top: 0;
         margin-right: 0;
+    }
+    .productos__main__div {
+        margin-left: 0;
+    }
+    .productos__main__section__one{
+        margin-left: 0;
     }
 }
