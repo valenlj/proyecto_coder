@@ -89,7 +89,7 @@ header{
 .header__nav{
     display: flex;
     justify-content: space-between; 
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0;
 }
 .header__nav__div__left{
     flex: 1; 
@@ -103,6 +103,7 @@ header{
     align-items: center; 
     list-style: none;
     margin-bottom: 0;
+    justify-content: flex-end;
 }
 .header__nav__ul__list{
    padding: 0.2rem 0.8rem;
@@ -336,11 +337,11 @@ main{
     padding-bottom: 10rem;
 }
 .inicio__main__section__second__article{
-    margin: 1rem;
+    margin: 0 1rem;
     text-align: left;
     background-color: #FDFCF0;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 1rem;
     display: inline-block;
     width: 300px;
     vertical-align: top;
@@ -349,21 +350,16 @@ main{
     display: flex;
     width: 150px;
     height: 240px;
-    margin-left: 70px;
     margin-bottom: 40px;
     margin-top: 20px;
 }
 .inicio__main__section__second__article__img__sahumador{
     display: flex;
-    width: 250px;
-    height: 150px;
     margin-top: 3.2rem;
     margin-bottom: 2.4rem;
 }
 .inicio__main__section__second__article__img__tierra{
     display: flex;
-    width: 200px;
-    height: 200px;
     margin-bottom: 30px;
 }
 .subtitle__section{
@@ -734,7 +730,7 @@ main{
 
 /**Página de contacto**/
 .contacto__main{
-    margin: 6rem;
+    margin: 6rem 2rem;
 }
 .contacto__main__form{
     display: flex;
@@ -804,7 +800,6 @@ main{
 .contacto__main__div__btn{
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
     justify-content: flex-end;
     gap: 30px;
 }
@@ -914,9 +909,6 @@ main{
         width: 370px;
     }
     .inicio__main__section__second__article__img__flor{
-        width: 200px;
-        height: 310px;
-        margin-left: 70px;
         margin-bottom: 20px;
     }
     .inicio__main__section__second__article__img__sahumador{
@@ -947,7 +939,7 @@ main{
         gap: 1rem;
     }
     .nosotros__main__section__second{
-        margin: 4rem;
+        margin: 2rem;
 
         .nosotros__main__section__second__article__red{
             width: auto;
