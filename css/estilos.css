@@ -26,56 +26,6 @@
     color: #FDFCF0;
 }
 
-/** Tipografía **/
-.title{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 800;
-    font-size: 3.5rem;
-}
-.title2{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
-}
-.subtitle{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-.btn-title{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-.h3-text{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-.p-text{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-}
-.text{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 300;
-    font-size: 1.3rem;
-}
-.font-nav{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-.subtext{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 200;
-    font-size: 1.2rem;
-}
-
-/****/
-
 /**Header**/
 header{
     padding: 0.5rem 4rem 0.2rem;
@@ -86,16 +36,12 @@ header{
     justify-content: space-between; 
     padding: 0.2rem 0;
 }
-.header__nav__div__left{
-    flex: 1; 
-}
 .header__nav__div__left__a__img{
     width: 60px;
     height: 50px;
 }
 .header__nav__div__ul__right{
     display: flex; 
-    align-items: center; 
     list-style: none;
     margin-bottom: 0;
     justify-content: flex-end;
@@ -106,24 +52,18 @@ header{
     border-radius: 20px;
     border: 1px solid #2A2A2A;
     background: #FDFCF0;
-}
-.header__nav__ul__list:hover{
-    border-radius: 20px;
-    border: 1px solid #000;
-    background: #fffabd;
-    color: #000;
-}
-.header__nav__ul__list:active{
-    border-radius: 20px;
-    border: 1px solid #878359;
-    background: #ddd582;
-    color: #464429;
-}
-.header__nav__ul__list__a{
-    text-decoration: none;
-}
-.header__nav__ul__list__a:hover{
-    color: #464429;
+    &:hover{
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: #fffabd;
+        color: #000;
+    }
+    &:active{
+        border-radius: 20px;
+        border: 1px solid #878359;
+        background: #ddd582;
+        color: #464429;
+    }
 }
 .header__nav__div__right{
     display: flex; 
@@ -135,15 +75,19 @@ header{
     font-size: 35px; 
     margin-left: 10px; 
     margin-bottom: 5px;
-}
-.icon:hover{
-    color: #020202;
+    &:hover{
+        color: #020202;
+    }
 }
 .font-nav{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
     text-decoration: none;
+    color: #2a2a2a;
+    &:hover{
+        color: #464429;
+    }
 }
 
 /**Footer**/
@@ -170,25 +114,29 @@ footer{
 .footer__nav__ul__list__a__red{
     text-decoration: none;
     margin: 0 10px;
-}
-.footer__nav__ul__list__a__red:hover{
-    color: #AD1725;
+    color: #EBEBEB;
+    &:hover{
+        color: #AD1725;
+    }
 }
 .footer__nav__ul__list__a__blue{
     text-decoration: none;
     margin: 0 10px;
-}
-.footer__nav__ul__list__a__blue:hover{
-    color: #2176AE;
+    color: #EBEBEB;
+    &:hover{
+        color: #2176AE;
+    }
 }
 .footer__nav__ul__list__a__yellow{
     text-decoration: none;
     margin: 0 10px;
-}
-.footer__nav__ul__list__a__yellow:hover{
-    color: #FFE24F;
+    color: #EBEBEB;
+    &:hover{
+        color: #FFE24F;
+    }
 }
 /**Icons**/
+
 .footer__nav__icon{
     display: flex;
     justify-content: center;
@@ -197,30 +145,30 @@ footer{
 .iconInstagram{
     color: #EBEBEB;
     font-size: 50px;
-}
-.iconInstagram:hover{
-    color: #DB5461;
+    &:hover{
+        color: #DB5461;
+    }
 }
 .iconFacebook{
     color: #EBEBEB;
     font-size: 50px;
-}
-.iconFacebook:hover{
-    color: #2176AE;
+    &:hover{
+        color: #2176AE;
+    }
 }
 .iconLinkedin{
     color: #EBEBEB;
     font-size: 50px;
-}
-.iconLinkedin:hover{
-    color: #FFE24F;
+    &:hover{
+        color: #FFE24F;
+    }
 }
 .iconWhatsapp{
     color: #EBEBEB;
     font-size: 50px;
-}
-.iconWhatsapp:hover{
-    color: #DB5461;
+    &:hover{
+        color: #DB5461;
+    }
 }
 
 /**Cuerpo y contenido principal**/
@@ -252,12 +200,6 @@ main{
     background: rgba(204, 28, 44, 0.46);
     box-shadow: 4px 4px 0px -1px #AD1725;
 }
-.main__section__article__button1__a{
-    text-decoration: none;
-}
-.main__section__article__button1__a:hover{
-    color: #000;
-}
 .main__section__article__button1:active{
     display: inline-flex;
     padding: 7px 37px;
@@ -268,12 +210,6 @@ main{
     border: 1px solid #51040B;
     background: #AD1725;
     box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.64);
-}
-.main__section__article__button2:active{
-    border-radius: 30px;
-    border: 1px solid #A68B03;
-    background: #FFD500;
-    box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.60);
 }
 .main__section__article__button2{
     padding: 10px 60px;
@@ -286,18 +222,22 @@ main{
     border-radius: 30px;
     background: #FFEA7D;
     box-shadow: 4px 4px 0px -1px #E4BF00;
-    border: 1px solid #5e4e00;;
+    border: 1px solid #5e4e00;
 }
-.main__section__article__button2__a{
-    text-decoration: none;
-}
-.main__section__article__button2__a:hover{
-    color: #000;
+.main__section__article__button2:active{
+    border-radius: 30px;
+    border: 1px solid #A68B03;
+    background: #FFD500;
+    box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.60);
 }
 .btn-title{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
+    color: #2a2a2a;
+    &:hover{
+        color: #000;
+    }
 }
 
         /**Secciones**/
@@ -346,14 +286,10 @@ main{
 }
 .inicio__main__section__second__article__img__flor{
     display: flex;
-    width: 150px;
-    height: 240px;
     margin-bottom: 40px;
-    margin-top: 20px;
 }
 .inicio__main__section__second__article__img__sahumador{
     display: flex;
-    margin-top: 3.2rem;
     margin-bottom: 2.4rem;
 }
 .inicio__main__section__second__article__img__tierra{
@@ -364,6 +300,7 @@ main{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 700;
     font-size: 2rem;
+    word-spacing: 20px;
 }
 .text__section__second{
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -390,6 +327,7 @@ main{
         font-family: 'Bricolage Grotesque', sans-serif;
         font-weight: 700;
         font-size: 2.5rem;
+        color: #EBEBEB;
     }
 }
 .inicio__main__section__third__div__uno{
@@ -413,6 +351,7 @@ main{
         font-family: 'Bricolage Grotesque', sans-serif;
         font-weight: 200;
         font-size: 1.2rem;
+        color: #2a2a2a;
     }
 }
 .inicio__main__section__third__div__li__uno{
@@ -444,6 +383,11 @@ main{
 .inicio__main__section__third__div__img__abejaflor{
     height: 600px;
 }
+.text__section__h3{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
 
 /**Section 4**/
 .inicio__main__section__fourth{
@@ -463,16 +407,11 @@ main{
 .inicio__main__section__fourth__article{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 /**Página de productos**/
-
-/**Introducción a la página**/
-
-/**Productos**/
 
 .productos__main__section__article__first{
     background-color: #FFE24F;
@@ -490,18 +429,30 @@ main{
     background-color: #fc7380;
     border-radius: 30px;
     display: inline-block;
-    padding: 20px;
+    padding: 2rem;
     width: 400px;
+}
+.title__producto__h1{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+.text__producto__h1{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 .title__producto{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
+    color: #2a2a2a;
 }
 .text__producto{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 300;
     font-size: 1rem;
+    color: #2a2a2a;
 }
 
 /**Página de Nosotros**/
