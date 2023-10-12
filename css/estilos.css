@@ -47,11 +47,6 @@
     font-weight: 600;
     font-size: 1.5rem;
 }
-.d-text{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
 .h3-text{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 600;
@@ -115,13 +110,13 @@ header{
 .header__nav__ul__list:hover{
     border-radius: 20px;
     border: 1px solid #000;
-    background: #FFFBD1;
+    background: #fffabd;
     color: #000;
 }
 .header__nav__ul__list:active{
     border-radius: 20px;
     border: 1px solid #878359;
-    background: #E3DC93;
+    background: #ddd582;
     color: #464429;
 }
 .header__nav__ul__list__a{
@@ -144,6 +139,12 @@ header{
 .icon:hover{
     color: #020202;
 }
+.font-nav{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
 
 /**Footer**/
 footer{
@@ -152,7 +153,7 @@ footer{
     font-size: 1rem;
     font-weight: 300;    
     display: block;
-    padding: 5rem; 
+    padding: 3rem; 
 }
 .footer__nav{
     display: flex;
@@ -232,10 +233,7 @@ main{
 
 /**Botones de la página principal**/
 .main__section__article__button1{
-    display: flex;
     padding: 7px 37px;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     border-radius: 30px;
     border: 1px solid #2a2a2a;
@@ -278,11 +276,7 @@ main{
     box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.60);
 }
 .main__section__article__button2{
-    display: inline-flex;
     padding: 10px 60px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 30px;
     border: 1px solid #2a2a2a;
     background: #FFE24F;
@@ -300,16 +294,15 @@ main{
 .main__section__article__button2__a:hover{
     color: #000;
 }
+.btn-title{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 
         /**Secciones**/
 
 /**Section 1**/
-.inicio__main__section__first{
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .inicio__main__section__img__size{
     width: 100%;
     height: 100%;
@@ -321,16 +314,23 @@ main{
     flex-direction: column;
     text-align: right;
     align-items: flex-end;
-    flex-wrap: wrap;
-    justify-content: space-around;
     gap: 20px;
+    .title__section__first{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 800;
+        font-size: 3.5rem;
+    }
+    .text__section__first{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 300;
+        font-size: 1.3rem;
+    }
 }
 
 /**Section 2**/
 .inicio__main__section__second{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     background-color: #FFE24F;
     justify-content: center;
     padding-top: 10rem;
@@ -338,13 +338,11 @@ main{
 }
 .inicio__main__section__second__article{
     margin: 0 1rem;
-    text-align: left;
     background-color: #FDFCF0;
     border-radius: 20px;
     padding: 1rem;
     display: inline-block;
     width: 300px;
-    vertical-align: top;
 }
 .inicio__main__section__second__article__img__flor{
     display: flex;
@@ -362,12 +360,12 @@ main{
     display: flex;
     margin-bottom: 30px;
 }
-.subtitle__section{
+.subtitle__section__second{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 700;
     font-size: 2rem;
 }
-.text__section{
+.text__section__second{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 300;
     font-size: 1rem;
@@ -376,20 +374,23 @@ main{
 /**Section 3**/
 .inicio__main__section__third{
     background-color: #2176AE;
-    padding-top: 10rem;
+    padding-top: 8rem;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 .inicio__main__section__third__div{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     gap: 10px;
     margin-bottom: 2rem;
     padding-bottom: 5rem;
+    .subtitle__section__third{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
 }
 .inicio__main__section__third__div__uno{
     display: flex;
@@ -403,23 +404,24 @@ main{
     width: 600px;
     height: 450px;
 }
-.inicio__main__section__third__div__li{
+.inicio__main__section__third__div__dos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+    .subtext__section__third{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
 }
 .inicio__main__section__third__div__li__uno{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 10px;
-    margin-right: 10px;
 }
 .inicio__main__section__third__div__uno__list{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 6rem;
+    padding: 1rem 8rem 1rem 1rem;
     background-color: #EBEBEB;
     border-radius: 15px;
     list-style-type: none;
@@ -427,7 +429,6 @@ main{
 .inicio__main__section__third__div__li__dos{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 10px;
 }
 .inicio__main__section__third__div__dos__list{
@@ -437,12 +438,10 @@ main{
     list-style-type: none;
 }
 .inicio__main__section__third__div__img{
-    display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
 }
 .inicio__main__section__third__div__img__abejaflor{
-    display: flex;
     height: 600px;
 }
 
@@ -450,83 +449,49 @@ main{
 .inicio__main__section__fourth{
     padding-top: 8rem;
     padding-bottom: 8rem;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-.inicio__main__section__fourth__div{
-    display: flex;
-
+    .subtitle__section__fourth{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .text__section__fourth{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
 }
 .inicio__main__section__fourth__article{
-    margin-top: 13rem;
-    margin-left: 0;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-}
-.inicio__main__section__fourth__div__img{
-    display: flex;
-    height: auto;
-}
-.text__section__fourth{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
 }
 
 /**Página de productos**/
 
 /**Introducción a la página**/
-.productos__main__div{
-    padding: 4rem 1rem;
-}
 
 /**Productos**/
 
-.productos__main__section__div{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 .productos__main__section__article__first{
     background-color: #FFE24F;
-    padding: 20px;
-    text-align: left;
+    padding: 2rem;
     margin: 1rem;
     border-radius: 30px;
     display: inline-block;
+    width: 400px;
 }
-.productos__main__section__article__img{
-    display: flex;
-    width: 150px;
-    height: 230px;
+.productos__img{
+    width: 200px;
 }
 .productos__main__section__article__second{
     margin: 1rem;
-    text-align: left;
-    background-color: #DB5461;
+    background-color: #fc7380;
     border-radius: 30px;
     display: inline-block;
     padding: 20px;
-}
-.productos__main__section__article__third{
-    margin: 1rem;
-    text-align: left;
-    background-color: #FFE24F;
-    border-radius: 30px;
-    display: inline-block;
-    padding: 20px;
-}
-.productos__main__section__article__fourth{    
-    margin: 1rem;
-    text-align: left;
-    background-color: #DB5461;
-    border-radius: 30px;
-    display: inline-block;
-    padding: 20px;
+    width: 400px;
 }
 .title__producto{
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -538,10 +503,6 @@ main{
     font-weight: 300;
     font-size: 1rem;
 }
-/**Compra mayorista**/
-.productos__main__section__one{
-    padding: 4rem 1rem;
-}
 
 /**Página de Nosotros**/
 
@@ -550,25 +511,21 @@ main{
     margin: 5rem;
     text-align: center;
 }
-.nosotros__main__section__first__div__principal{
+.nosotros__main__section__first__div{
     display: flex;
-    text-align: right;
-    flex-direction: row;
     flex-wrap: wrap;
-    background-color: #EBEBEB;
-    margin: 1rem 0;
-    padding: 3rem;
-}
-.nosotros__main__section__first__div_secundario{
-    margin: 1rem 0;
-    background-color: #EBEBEB;
-    padding: 3rem;
-    display: flex;
-    flex-direction: row-reverse;
+    background-color: #fff597f1;
+    margin: 2rem 0;
+    padding: 3rem 1rem;
 }
 .nosotros__main__div{
     margin: 5rem;
     text-align: center;
+}
+.title__nosotros{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
 }
 .text__nosotros{
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -578,35 +535,34 @@ main{
 
 /**Section 2**/
 .nosotros__main__section__second{
-    margin: 3rem;
+    margin: 1rem;
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
 .nosotros__main__section__second__article__red{
     background-color: #DB5461;
-    margin: 0.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 15px;
     display: inline-block;
-    width: 220px;
+    width: 230px;
 }
 .nosotros__main__section__second__article__yellow{
     background-color: #FFE24F;
-    margin: 0.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 15px;
     display: inline-block;
-    width: 220px;
+    width: 230px;
 }
 .nosotros__main__section__second__article__blue{
     background-color: #2176AE;
     margin: 0.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 15px;
     display: inline-block;
-    width: 220px;
+    width: 230px;
 }
 /**Video**/
 .nosotros__main__div__video{
@@ -618,17 +574,22 @@ main{
     display: flex;
     justify-content: center;
 }
-/**Yipografía**/
-.s-subtitle{
-    margin: 5rem;
-    text-align: center;
+.nosotros__video{
+    width: 560px; 
+    height: 315px;
 }
-.fontH{
+/**tipografía**/
+.title__nosotros__h2{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.title__nosotros__h3{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
 }
-.fontP{
+.text__nosotros__p{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 300;
     font-size: 1rem;
@@ -714,10 +675,12 @@ main{
     margin: 1rem;
     box-shadow: 6px 6px 0px -1px #000;
 }
-.descubre__flex{
-    flex-wrap: nowrap;
+.title__descubre{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
 }
-.text__descubre__h1{
+.text__descubre__p{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
@@ -727,27 +690,14 @@ main{
     font-weight: 300;
     font-size: 1.1rem;
 }
+.text__descubre__h2{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 
 /**Página de contacto**/
-.contacto__main{
-    margin: 6rem 2rem;
-}
-.contacto__main__form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.contacto__main__form__div{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.contacto__main__form__div__two{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.contacto__main__form__div__input{
+.contacto__main__form__div__input__name{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
     font-size: 12px;
@@ -759,19 +709,7 @@ main{
     background: #F5F5F5;
     box-shadow: 4px 4px 0px -1px #000;
 }
-.contacto__main__form__div__input__two{
-    margin-top: 0.2rem;
-    margin-bottom: 0.5rem;
-    font-size: 12px;
-    width: 160px;
-    height: 40px;
-    padding-left: 0.3rem;
-    border-radius: 15px;
-    border: 1px solid #2A2A2A;
-    background: #F5F5F5;
-    box-shadow: 4px 4px 0px -1px #000;
-}
-.contacto__main__form__div__input__three{
+.contacto__main__form__div__input__email{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
     font-size: 12px;
@@ -783,7 +721,7 @@ main{
     background: #F5F5F5;
     box-shadow: 4px 4px 0px -1px #000;   
 }
-.contacto__main__form__div__input__four{
+.contacto__main__form__div__input__message{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
@@ -796,23 +734,17 @@ main{
     background: #EBEBEB;
     box-shadow: 4px 4px 0px -1px #000;
 }
-/**Botones en la página de contacto**/
-.contacto__main__div__btn{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 30px;
+.title__contacto{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
 }
+
+/**Botones en la página de contacto**/
 .contacto__main__div__btn__one{
-    display: flex;
     margin-top: 0.5rem;
     width: 195px;
-    height: 46px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    flex-shrink: 0;
+    height: 45px;
     border-radius: 20px;
     background: #1B8BD6;
     box-shadow: 4px 4px 0px -1px #000;
@@ -821,28 +753,24 @@ main{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    
 }
 .contacto__main__div__btn__two{
-    display: flex;
     margin-top: 0.5rem;
-    width: 196px;
-    height: 46px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    flex-shrink: 0;
+    width: 195px;
+    height: 45px;
     border-radius: 20px;
     background: #81A0B4;
     box-shadow: 4px 4px 0px -1px #000;
     color: #F5F5F5;
-    text-align: center;
     font-family: Bricolage Grotesque;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; /* 28.8px */
+}
+.text__contacto{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
 }
 
 /**Diseño responsive**/
@@ -867,25 +795,22 @@ main{
         text-align: center;
         align-items: center;
     }
+    .inicio__main__section__img__size{
+        display: none;
+    }
 
    .inicio__main__section__third__uno__map{
-        width: 300px;
-        height: 150px;
+        width: 350px;
+        height: 240px;
         
    }
     .inicio__main__section__third__div__li{
         align-items: center;
         flex-direction: column;
     }
-    .inicio__main__section__img__size{
-        display: none;
-    }
     .inicio__main__section__third__div__img__abejaflor{
         width: 300px;
         height: 400px;
-        display: none;
-    }
-    .inicio__main__section__fourth__div__img{
         display: none;
     }
     .inicio__main__section__fourth__article{
@@ -904,9 +829,6 @@ main{
     .inicio__main__section__second{
         padding-top: 5rem;
         padding-bottom: 5rem;
-    }
-    .display{
-        width: 370px;
     }
     .inicio__main__section__second__article__img__flor{
         margin-bottom: 20px;
@@ -940,16 +862,6 @@ main{
     }
     .nosotros__main__section__second{
         margin: 2rem;
-
-        .nosotros__main__section__second__article__red{
-            width: auto;
-        }
-        .nosotros__main__section__second__article__yellow{
-            width: auto;
-        }
-        .nosotros__main__section__second__article__blue{
-            width: auto;
-        }
     }
     .nosotros__main__div{
         margin: 1rem;
@@ -957,16 +869,16 @@ main{
     .nosotros__main__div__video{
         margin: 1rem;
         padding: 1rem;
+        .nosotros__video{
+            width: 230px;
+            height: 120px;
+        }
     }
 
-    .contacto__main{
-        margin: 3rem 0;
+    .descubre__flex{
+        flex-wrap: wrap;
+    }
 
-    }
-    .contacto__main__div__btn{
-        flex-wrap: nowrap;
-        gap: 10px;
-    }
     .contacto__main__img{
         display: none;
     }
@@ -974,9 +886,5 @@ main{
     .footer__nav__ul{
         flex-direction: column;
         align-items: center;
-    }
-
-    .descubre__flex{
-        flex-wrap: wrap;
     }
 }
