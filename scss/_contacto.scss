@@ -1,0 +1,78 @@
+.contacto__main__form__div__input__name{
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    width: 160px;
+    height: 40px;
+    padding-left: 0.3rem;
+    border-radius: 15px;
+    border: 1px solid #2A2A2A;
+    background: #F5F5F5;
+    box-shadow: 4px 4px 0px -1px #000;
+}
+.contacto__main__form__div__input__email{
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    width: 340px; 
+    height: 40px;
+    padding-left: 0.3rem;
+    border-radius: 15px;
+    border: 1px solid #2A2A2A;
+    background: #F5F5F5;
+    box-shadow: 4px 4px 0px -1px #000;   
+}
+.contacto__main__form__div__input__message{
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 12px; 
+    width: 400px;
+    height: 300px;   
+    text-align: left;
+    border-radius: 15px;
+    border: 1px solid #2B2B2B;
+    background: #EBEBEB;
+    box-shadow: 4px 4px 0px -1px #000;
+}
+.title__contacto{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+.contacto__main__div__btn__one{
+    margin-top: 0.5rem;
+    width: 195px;
+    height: 45px;
+    border-radius: 20px;
+    background: #1B8BD6;
+    box-shadow: 4px 4px 0px -1px #000;
+    color: #F5F5F5;
+    font-family: Bricolage Grotesque;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+.contacto__main__div__btn__two{
+    margin-top: 0.5rem;
+    width: 195px;
+    height: 45px;
+    border-radius: 20px;
+    background: #81A0B4;
+    box-shadow: 4px 4px 0px -1px #000;
+    color: #F5F5F5;
+    font-family: Bricolage Grotesque;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+.text__contacto{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+@media screen and (max-width: 768px){
+    .contacto__main__img{
+        display: none;
+    }
+}

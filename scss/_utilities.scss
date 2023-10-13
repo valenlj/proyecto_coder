@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FDFCF0;
+}
+.escritorio{
+    display: none;
+}
+@media screen and (min-width: 768px){
+.escritorio{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.celular{
+        display: none;
+
+}
+}

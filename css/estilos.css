@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap");
-/**Reseteo de valores**/
 * {
   margin: 0;
   padding: 0;
@@ -8,64 +7,79 @@
 body {
   background-color: #FDFCF0;
 }
-body header {
+
+.escritorio {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .escritorio {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .celular {
+    display: none;
+  }
+}
+header {
   padding: 0.5rem 4rem 0.2rem;
   border-bottom: #2a2a2a 2px solid;
 }
-body header .header__img {
+header .header__img {
   width: 60px;
   height: 50px;
 }
-body header .header__div__ul {
+header .header__div__ul {
   display: flex;
   list-style: none;
   margin-bottom: 0;
   justify-content: flex-end;
 }
-body header .header__div__ul .header__div__ul__list {
+header .header__div__ul .header__div__ul__list {
   padding: 0.2rem 0.8rem;
   margin: 0.5rem;
   border-radius: 20px;
   border: 1px solid #2A2A2A;
   background: #FDFCF0;
 }
-body header .header__div__ul .header__div__ul__list:hover {
+header .header__div__ul .header__div__ul__list:hover {
   border-radius: 20px;
   border: 1px solid #000;
   background: #fffabd;
   color: #000;
 }
-body header .header__div__ul .header__div__ul__list:active {
+header .header__div__ul .header__div__ul__list:active {
   border-radius: 20px;
   border: 1px solid #878359;
   background: #ddd582;
   color: #464429;
 }
-body header .header__div__ul .header__div__ul__list .font-nav {
+header .header__div__ul .header__div__ul__list .font-nav {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   text-decoration: none;
   color: #2a2a2a;
 }
-body header .header__div__ul .header__div__ul__list .font-nav:hover {
+header .header__div__ul .header__div__ul__list .font-nav:hover {
   color: #464429;
 }
-body header .header__div {
+header .header__div {
   display: flex;
   align-items: center;
   list-style: none;
 }
-body header .header__div .icon {
+header .header__div .icon {
   color: #2A2A2A;
   font-size: 35px;
   margin-left: 10px;
   margin-bottom: 5px;
 }
-body header .header__div .icon:hover {
+header .header__div .icon:hover {
   color: #020202;
 }
-body footer {
+
+footer {
   background-color: #2a2a2a;
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1rem;
@@ -73,81 +87,89 @@ body footer {
   display: block;
   padding: 3rem;
 }
-body footer .footer__nav {
+footer .footer__nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-body footer .footer__nav .footer__nav__ul {
+footer .footer__nav .footer__nav__ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0.5rem;
   list-style: none;
 }
-body footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__red {
+footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__red {
   text-decoration: none;
   margin: 0 10px;
   color: #EBEBEB;
 }
-body footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__red:hover {
+footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__red:hover {
   color: #AD1725;
 }
-body footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__blue {
+footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__blue {
   text-decoration: none;
   margin: 0 10px;
   color: #EBEBEB;
 }
-body footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__blue:hover {
+footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__blue:hover {
   color: #2176AE;
 }
-body footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__yellow {
+footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__yellow {
   text-decoration: none;
   margin: 0 10px;
   color: #EBEBEB;
 }
-body footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__yellow:hover {
+footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__yellow:hover {
   color: #FFE24F;
 }
-body footer .footer__nav__icon {
+footer .footer__nav__icon {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
-body footer .footer__nav__icon .iconInstagram {
+footer .footer__nav__icon .iconInstagram {
   color: #EBEBEB;
   font-size: 50px;
 }
-body footer .footer__nav__icon .iconInstagram:hover {
+footer .footer__nav__icon .iconInstagram:hover {
   color: #DB5461;
 }
-body footer .footer__nav__icon .iconFacebook {
+footer .footer__nav__icon .iconFacebook {
   color: #EBEBEB;
   font-size: 50px;
 }
-body footer .footer__nav__icon .iconFacebook:hover {
+footer .footer__nav__icon .iconFacebook:hover {
   color: #2176AE;
 }
-body footer .footer__nav__icon .iconLinkedin {
+footer .footer__nav__icon .iconLinkedin {
   color: #EBEBEB;
   font-size: 50px;
 }
-body footer .footer__nav__icon .iconLinkedin:hover {
+footer .footer__nav__icon .iconLinkedin:hover {
   color: #FFE24F;
 }
-body footer .footer__nav__icon .iconWhatsapp {
+footer .footer__nav__icon .iconWhatsapp {
   color: #EBEBEB;
   font-size: 50px;
 }
-body footer .footer__nav__icon .iconWhatsapp:hover {
+footer .footer__nav__icon .iconWhatsapp:hover {
   color: #DB5461;
 }
-body .inicio__main__section__img__size {
+
+@media screen and (max-width: 768px) {
+  .footer__nav__ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.inicio__main__section__img__size {
   width: 100%;
   height: 100%;
   text-align: left;
 }
-body .inicio__main__section__first__article {
+
+.inicio__main__section__first__article {
   margin: 5rem 2rem;
   display: flex;
   flex-direction: column;
@@ -155,17 +177,17 @@ body .inicio__main__section__first__article {
   align-items: flex-end;
   gap: 20px;
 }
-body .inicio__main__section__first__article .title__section__first {
+.inicio__main__section__first__article .title__section__first {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
 }
-body .inicio__main__section__first__article .text__section__first {
+.inicio__main__section__first__article .text__section__first {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
 }
-body .inicio__main__section__first__article .main__section__article__button1 {
+.inicio__main__section__first__article .main__section__article__button1 {
   padding: 7px 37px;
   gap: 10px;
   border-radius: 30px;
@@ -174,7 +196,7 @@ body .inicio__main__section__first__article .main__section__article__button1 {
   color: #2a2a2a;
   box-shadow: 4px 4px 0px -1px #000000;
 }
-body .inicio__main__section__first__article .main__section__article__button1:hover {
+.inicio__main__section__first__article .main__section__article__button1:hover {
   display: flex;
   padding: 7px 37px;
   justify-content: center;
@@ -185,7 +207,7 @@ body .inicio__main__section__first__article .main__section__article__button1:hov
   background: rgba(204, 28, 44, 0.46);
   box-shadow: 4px 4px 0px -1px #AD1725;
 }
-body .inicio__main__section__first__article .main__section__article__button1:active {
+.inicio__main__section__first__article .main__section__article__button1:active {
   display: inline-flex;
   padding: 7px 37px;
   justify-content: center;
@@ -196,16 +218,17 @@ body .inicio__main__section__first__article .main__section__article__button1:act
   background: #AD1725;
   box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.64);
 }
-body .inicio__main__section__first__article .main__section__article__button1 .btn-title {
+.inicio__main__section__first__article .main__section__article__button1 .btn-title {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   color: #2a2a2a;
 }
-body .inicio__main__section__first__article .main__section__article__button1 .btn-title:hover {
+.inicio__main__section__first__article .main__section__article__button1 .btn-title:hover {
   color: #000;
 }
-body .inicio__main__section__second {
+
+.inicio__main__section__second {
   display: flex;
   flex-wrap: wrap;
   background-color: #FFE24F;
@@ -213,7 +236,7 @@ body .inicio__main__section__second {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
-body .inicio__main__section__second .inicio__main__section__second__article {
+.inicio__main__section__second .inicio__main__section__second__article {
   margin: 0 1rem;
   background-color: #FDFCF0;
   border-radius: 20px;
@@ -221,36 +244,37 @@ body .inicio__main__section__second .inicio__main__section__second__article {
   display: inline-block;
   width: 300px;
 }
-body .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__flor {
+.inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__flor {
   display: flex;
   margin-bottom: 1.5rem;
 }
-body .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__ahumador {
+.inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__ahumador {
   display: flex;
   margin-bottom: 1.5rem;
 }
-body .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__tierra {
+.inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__tierra {
   display: flex;
   margin-bottom: 1.5rem;
 }
-body .inicio__main__section__second .inicio__main__section__second__article .subtitle__section__second {
+.inicio__main__section__second .inicio__main__section__second__article .subtitle__section__second {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   word-spacing: 20px;
 }
-body .inicio__main__section__second .inicio__main__section__second__article .text__section__second {
+.inicio__main__section__second .inicio__main__section__second__article .text__section__second {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
-body .inicio__main__section__third {
+
+.inicio__main__section__third {
   background-color: #2176AE;
   padding-top: 8rem;
   display: flex;
   justify-content: center;
 }
-body .inicio__main__section__third .inicio__main__section__third__div {
+.inicio__main__section__third .inicio__main__section__third__div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -259,119 +283,156 @@ body .inicio__main__section__third .inicio__main__section__third__div {
   margin-bottom: 2rem;
   padding-bottom: 5rem;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno .inicio__main__section__third__uno__map {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno .inicio__main__section__third__uno__map {
   margin-bottom: 1rem;
   border-radius: 10px;
   width: 600px;
   height: 450px;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno .subtitle__section__third {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno .subtitle__section__third {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   color: #EBEBEB;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .subtext__section__third {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .subtext__section__third {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 200;
   font-size: 1.2rem;
   color: #2a2a2a;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__uno {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__uno {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__uno .inicio__main__section__third__div__uno__list {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__uno .inicio__main__section__third__div__uno__list {
   padding: 1rem 8rem 1rem 1rem;
   background-color: #EBEBEB;
   border-radius: 15px;
   list-style-type: none;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__dos {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__dos {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__dos .inicio__main__section__third__div__dos__list {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__dos .inicio__main__section__third__div__dos__list {
   padding: 1rem;
   background-color: #EBEBEB;
   border-radius: 15px;
   list-style-type: none;
 }
-body .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .text__section__h3 {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .text__section__h3 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
 }
-body .inicio__main__section__third .inicio__main__section__third__div__img {
+.inicio__main__section__third .inicio__main__section__third__div__img {
   flex-wrap: wrap;
   align-content: flex-end;
 }
-body .inicio__main__section__third .inicio__main__section__third__div__img .inicio__main__section__third__div__img__abejaflor {
+.inicio__main__section__third .inicio__main__section__third__div__img .inicio__main__section__third__div__img__abejaflor {
   height: 600px;
 }
-body .inicio__main__section__fourth {
+
+.inicio__main__section__fourth {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-body .inicio__main__section__fourth .subtitle__section__fourth {
+.inicio__main__section__fourth .subtitle__section__fourth {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
 }
-body .inicio__main__section__fourth .text__section__fourth {
+.inicio__main__section__fourth .text__section__fourth {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
 }
-body .inicio__main__section__fourth .inicio__main__section__fourth__article {
+.inicio__main__section__fourth .inicio__main__section__fourth__article {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px;
 }
-body .inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2 {
+.inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2 {
   padding: 10px 60px;
   border-radius: 30px;
   border: 1px solid #2a2a2a;
   background: #FFE24F;
   box-shadow: 4px 4px 0px -1px #000;
 }
-body .inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2:hover {
+.inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2:hover {
   border-radius: 30px;
   background: #FFEA7D;
   box-shadow: 4px 4px 0px -1px #E4BF00;
   border: 1px solid #5e4e00;
 }
-body .inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2:active {
+.inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2:active {
   border-radius: 30px;
   border: 1px solid #A68B03;
   background: #FFD500;
   box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.6);
 }
-body .inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2 .btn-title2 {
+.inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2 .btn-title2 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   color: #2a2a2a;
 }
-body .inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2 .btn-title2:hover {
+.inicio__main__section__fourth .inicio__main__section__fourth__article .main__section__article__button2 .btn-title2:hover {
   color: #000;
 }
-body .productos__main__section__article__first {
+
+@media screen and (max-width: 768px) {
+  .inicio__main__section__first__article {
+    margin: 4rem 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  .inicio__main__section__img__size {
+    display: none;
+  }
+  .inicio__main__section__second {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .inicio__main__section__second .inicio__main__section__second__article {
+    padding: 1.5rem;
+    margin: 2rem;
+  }
+  .inicio__main__section__third__uno__map {
+    width: 350px;
+    height: 240px;
+  }
+  .inicio__main__section__third__div__li {
+    align-items: center;
+    flex-direction: column;
+  }
+  .inicio__main__section__third__div__img__abejaflor {
+    width: 300px;
+    height: 400px;
+    display: none;
+  }
+  .inicio__main__section__fourth__article {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+}
+.productos__main__section__article__first {
   background-color: #FFE24F;
   padding: 2rem;
   margin: 1rem;
@@ -379,7 +440,8 @@ body .productos__main__section__article__first {
   display: inline-block;
   width: 400px;
 }
-body .productos__main__section__article__second {
+
+.productos__main__section__article__second {
   margin: 1rem;
   background-color: #fc7380;
   border-radius: 30px;
@@ -387,62 +449,77 @@ body .productos__main__section__article__second {
   padding: 2rem;
   width: 400px;
 }
-body .productos__img {
+
+.productos__img {
   width: 200px;
 }
-body .title__producto {
+
+.title__producto {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   color: #2a2a2a;
 }
-body .text__producto {
+
+.text__producto {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #2a2a2a;
 }
-body .title__producto__h1 {
+
+.title__producto__h1 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
 }
-body .text__producto__h1 {
+
+.text__producto__h1 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
 }
-body .nosotros__main__section__first__h1 {
+
+@media screen and (max-width: 768px) {
+  .productos__main__div {
+    margin-left: 0;
+  }
+}
+.nosotros__main__section__first__h1 {
   margin: 5rem;
   text-align: center;
 }
-body .nosotros__main__section__first__div {
+
+.nosotros__main__section__first__div {
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(255, 245, 151, 0.9450980392);
   margin: 2rem 0;
   padding: 3rem 1rem;
 }
-body .nosotros__main__section__first__div .text__nosotros {
+.nosotros__main__section__first__div .text__nosotros {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
 }
-body .nosotros__main__div {
+
+.nosotros__main__div {
   margin: 5rem;
   text-align: center;
 }
-body .nosotros__main__div .title__nosotros__h2 {
+.nosotros__main__div .title__nosotros__h2 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
 }
-body .title__nosotros {
+
+.title__nosotros {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
 }
-body .nosotros__main__section__second {
+
+.nosotros__main__section__second {
   margin: 1rem;
   display: flex;
   gap: 20px;
@@ -450,21 +527,21 @@ body .nosotros__main__section__second {
   flex-direction: row;
   justify-content: space-evenly;
 }
-body .nosotros__main__section__second .nosotros__main__section__second__article__red {
+.nosotros__main__section__second .nosotros__main__section__second__article__red {
   background-color: #DB5461;
   padding: 1.5rem;
   border-radius: 15px;
   display: inline-block;
   width: 230px;
 }
-body .nosotros__main__section__second .nosotros__main__section__second__article__yellow {
+.nosotros__main__section__second .nosotros__main__section__second__article__yellow {
   background-color: #FFE24F;
   padding: 1.5rem;
   border-radius: 15px;
   display: inline-block;
   width: 230px;
 }
-body .nosotros__main__section__second .nosotros__main__section__second__article__blue {
+.nosotros__main__section__second .nosotros__main__section__second__article__blue {
   background-color: #2176AE;
   margin: 0.5rem;
   padding: 1.5rem;
@@ -472,17 +549,18 @@ body .nosotros__main__section__second .nosotros__main__section__second__article_
   display: inline-block;
   width: 230px;
 }
-body .nosotros__main__section__second .title__nosotros__h3 {
+.nosotros__main__section__second .title__nosotros__h3 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
 }
-body .nosotros__main__section__second .text__nosotros__p {
+.nosotros__main__section__second .text__nosotros__p {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
-body .nosotros__main__div__video {
+
+.nosotros__main__div__video {
   margin: 5rem;
   text-align: center;
   background-color: #2a2a2a;
@@ -491,28 +569,50 @@ body .nosotros__main__div__video {
   display: flex;
   justify-content: center;
 }
-body .nosotros__main__div__video .nosotros__video {
+.nosotros__main__div__video .nosotros__video {
   width: 560px;
   height: 315px;
 }
-body .descubre__main__div {
+
+@media screen and (max-width: 768px) {
+  .nosotros__main__section__first__h1 {
+    margin: 4rem 1rem;
+    text-align: left;
+  }
+  .nosotros__main__section__second {
+    margin: 2rem;
+  }
+  .nosotros__main__div {
+    margin: 1rem;
+  }
+  .nosotros__main__div__video {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .nosotros__main__div__video .nosotros__video {
+    width: 230px;
+    height: 120px;
+  }
+}
+.descubre__main__div {
   margin: 4rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: left;
 }
-body .descubre__main__div .title__descubre {
+.descubre__main__div .title__descubre {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
 }
-body .descubre__main__div .text__descubre__p {
+.descubre__main__div .text__descubre__p {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
 }
-body .descubre__main__article__one {
+
+.descubre__main__article__one {
   background-color: #2176AE;
   padding: 1rem;
   text-align: right;
@@ -524,7 +624,8 @@ body .descubre__main__article__one {
   margin: 1rem;
   box-shadow: 6px 6px 0px -1px #000;
 }
-body .descubre__main__article__two {
+
+.descubre__main__article__two {
   background-color: #DB5461;
   padding: 1rem;
   text-align: left;
@@ -536,7 +637,8 @@ body .descubre__main__article__two {
   margin: 1rem;
   box-shadow: 6px 6px 0px -1px #000;
 }
-body .descubre__main__article__three {
+
+.descubre__main__article__three {
   background-color: #FFE24F;
   padding: 1rem;
   text-align: right;
@@ -548,7 +650,8 @@ body .descubre__main__article__three {
   margin: 1rem;
   box-shadow: 6px 6px 0px -1px #000;
 }
-body .descubre__main__article__four {
+
+.descubre__main__article__four {
   background-color: #2176AE;
   padding: 1rem;
   text-align: left;
@@ -560,7 +663,8 @@ body .descubre__main__article__four {
   margin: 1rem;
   box-shadow: 6px 6px 0px -1px #000;
 }
-body .descubre__main__article__five {
+
+.descubre__main__article__five {
   background-color: #DB5461;
   padding: 1rem;
   text-align: right;
@@ -572,7 +676,8 @@ body .descubre__main__article__five {
   margin: 1rem;
   box-shadow: 6px 6px 0px -1px #000;
 }
-body .descubre__main__article__six {
+
+.descubre__main__article__six {
   background-color: #FFE24F;
   padding: 1rem;
   text-align: left;
@@ -584,17 +689,25 @@ body .descubre__main__article__six {
   margin: 1rem;
   box-shadow: 6px 6px 0px -1px #000;
 }
-body .text__descubre {
+
+.text__descubre {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
 }
-body .text__descubre__h2 {
+
+.text__descubre__h2 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
 }
-body .contacto__main__form__div__input__name {
+
+@media screen and (max-width: 768px) {
+  .descubre__flex {
+    flex-wrap: wrap;
+  }
+}
+.contacto__main__form__div__input__name {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   font-size: 12px;
@@ -606,7 +719,8 @@ body .contacto__main__form__div__input__name {
   background: #F5F5F5;
   box-shadow: 4px 4px 0px -1px #000;
 }
-body .contacto__main__form__div__input__email {
+
+.contacto__main__form__div__input__email {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   font-size: 12px;
@@ -618,7 +732,8 @@ body .contacto__main__form__div__input__email {
   background: #F5F5F5;
   box-shadow: 4px 4px 0px -1px #000;
 }
-body .contacto__main__form__div__input__message {
+
+.contacto__main__form__div__input__message {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
@@ -631,12 +746,14 @@ body .contacto__main__form__div__input__message {
   background: #EBEBEB;
   box-shadow: 4px 4px 0px -1px #000;
 }
-body .title__contacto {
+
+.title__contacto {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
 }
-body .contacto__main__div__btn__one {
+
+.contacto__main__div__btn__one {
   margin-top: 0.5rem;
   width: 195px;
   height: 45px;
@@ -649,7 +766,8 @@ body .contacto__main__div__btn__one {
   font-style: normal;
   font-weight: 400;
 }
-body .contacto__main__div__btn__two {
+
+.contacto__main__div__btn__two {
   margin-top: 0.5rem;
   width: 195px;
   height: 45px;
@@ -662,114 +780,16 @@ body .contacto__main__div__btn__two {
   font-style: normal;
   font-weight: 400;
 }
-body .text__contacto {
+
+.text__contacto {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
 }
-body .escritorio {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  body .escritorio {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  body .celular {
-    display: none;
-  }
-}
+
 @media screen and (max-width: 768px) {
-  body .inicio__main__section__first__article {
-    margin: 4rem 1rem;
-    text-align: center;
-    align-items: center;
-  }
-  body .inicio__main__section__img__size {
+  .contacto__main__img {
     display: none;
-  }
-  body .inicio__main__section__third__uno__map {
-    width: 350px;
-    height: 240px;
-  }
-  body .inicio__main__section__third__div__li {
-    align-items: center;
-    flex-direction: column;
-  }
-  body .inicio__main__section__third__div__img__abejaflor {
-    width: 300px;
-    height: 400px;
-    display: none;
-  }
-  body .inicio__main__section__fourth__article {
-    margin: 1rem;
-    margin-left: 2rem;
-  }
-  body .inicio__main__section__second__article {
-    padding: 1.5rem;
-    margin: 2rem;
-  }
-  body .inicio__main__section__second__article .subtitle {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  body .inicio__main__section__second {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-  body .inicio__main__section__second__article__img__flor {
-    margin-bottom: 20px;
-  }
-  body .inicio__main__section__second__article__img__sahumador {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  body .productos__main__div {
-    margin-left: 0;
-  }
-  body .productos__main__section__one {
-    margin-left: 0;
-  }
-  body .nosotros__main__section__first__h1 {
-    margin: 4rem 1rem;
-    text-align: left;
-  }
-  body .nosotros__main__section__first__div__principal {
-    margin: 4rem 2rem;
-    padding: 2rem 1rem;
-    text-align: left;
-    gap: 1rem;
-  }
-  body .nosotros__main__section__first__div_secundario {
-    margin: 4rem 2rem;
-    padding: 2rem 1rem;
-    text-align: left;
-    gap: 1rem;
-  }
-  body .nosotros__main__section__second {
-    margin: 2rem;
-  }
-  body .nosotros__main__div {
-    margin: 1rem;
-  }
-  body .nosotros__main__div__video {
-    margin: 1rem;
-    padding: 1rem;
-  }
-  body .nosotros__main__div__video .nosotros__video {
-    width: 230px;
-    height: 120px;
-  }
-  body .descubre__flex {
-    flex-wrap: wrap;
-  }
-  body .contacto__main__img {
-    display: none;
-  }
-  body .footer__nav__ul {
-    flex-direction: column;
-    align-items: center;
   }
 }
 

@@ -1,0 +1,47 @@
+.productos__main__section__article__first{
+    background-color: #FFE24F;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 30px;
+    display: inline-block;
+    width: 400px;
+}
+.productos__main__section__article__second{
+    margin: 1rem;
+    background-color: #fc7380;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 2rem;
+    width: 400px;
+}
+.productos__img{
+    width: 200px;
+}
+.title__producto{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2a2a2a;
+}
+.text__producto{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #2a2a2a;
+}
+.title__producto__h1{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+.text__producto__h1{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 768px){
+
+    .productos__main__div {
+        margin-left: 0;
+    }
+}
