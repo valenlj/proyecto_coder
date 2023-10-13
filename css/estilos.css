@@ -223,15 +223,15 @@ body .inicio__main__section__second .inicio__main__section__second__article {
 }
 body .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__flor {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 1.5rem;
 }
-body .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__sahumador {
+body .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__ahumador {
   display: flex;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 body .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__tierra {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 body .inicio__main__section__second .inicio__main__section__second__article .subtitle__section__second {
   font-family: "Bricolage Grotesque", sans-serif;
