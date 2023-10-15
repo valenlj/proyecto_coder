@@ -1,5 +1,6 @@
 /**Página de contacto**/
 
+/**Formulario**/
 .contacto__main__form__div__input__name{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
@@ -10,7 +11,7 @@
     border-radius: 15px;
     border: 1px solid $color-jet;
     background: $color-antiflash;
-    box-shadow: $sombra;
+    box-shadow: map-get($sombras, sombra4px);
 }
 .contacto__main__form__div__input__email{
     margin-top: 0.2rem;
@@ -22,7 +23,7 @@
     border-radius: 15px;
     border: 1px solid $color-jet;
     background: $color-antiflash;
-    box-shadow: $sombra;   
+    box-shadow: map-get($sombras, sombra4px);   
 }
 .contacto__main__form__div__input__message{
     margin-top: 0.2rem;
@@ -35,38 +36,52 @@
     border-radius: 15px;
     border: 1px solid $color-jet;
     background: $color-antiflash;
-    box-shadow: $sombra;
+    box-shadow: map-get($sombras, sombra4px);
 }
-.title__contacto{
-    font-family: $font-principal;
-    font-weight: 800;
-    font-size: 3.5rem;
-}
+
+/**Botones**/
 .contacto__main__div__btn__one{
     margin-top: 0.5rem;
     width: 195px;
     height: 45px;
     border-radius: 20px;
     background: #1B8BD6;
-    box-shadow: $sombra;
+    box-shadow: map-get($sombras, sombra4px);
     color: #F5F5F5;
     font-family: $font-principal;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
+    &:hover{
+        background-color: #38aaf6;
+        color: #2a2a2a;
+        box-shadow: map-get($sombras, sombraHover);
+    }
 }
 .contacto__main__div__btn__two{
     margin-top: 0.5rem;
     width: 195px;
     height: 45px;
     border-radius: 20px;
-    background: #81A0B4;
-    box-shadow: $sombra;
+    background: #6094b6;
+    box-shadow: map-get($sombras, sombra4px);
     color: #F5F5F5;
     font-family: $font-principal;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
+    &:hover{
+        background-color: #8abddf;
+        color: #2a2a2a;
+        box-shadow: map-get($sombras, sombraHover);
+    }
+}
+
+/**Tipografía**/
+.title__contacto{
+    font-family: $font-principal;
+    font-weight: 800;
+    font-size: 3.5rem;
 }
 .text__contacto{
     font-family: $font-principal;

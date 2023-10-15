@@ -24,17 +24,13 @@ footer{
                 }
             }
             .footer__nav__ul__list__a__blue{
-                text-decoration: none;
-                margin: 0 10px;
-                color: $color-antiflash;
+                @extend .footer__nav__ul__list__a__red;
                 &:hover{
                     color: $color-terciario;
                 }
             }
             .footer__nav__ul__list__a__yellow{
-                text-decoration: none;
-                margin: 0 10px;
-                color: $color-antiflash;
+                @extend .footer__nav__ul__list__a__red;
                 &:hover{
                     color: $color-primario;
                 }
@@ -53,22 +49,19 @@ footer{
             }
         }
         .iconFacebook{
-            color: $color-antiflash;
-            font-size: 50px;
+            @extend .iconInstagram;
             &:hover{
                 color: $color-terciario;
             }
         }
         .iconLinkedin{
-            color: $color-antiflash;
-            font-size: 50px;
+            @extend .iconInstagram;
             &:hover{
                 color: $color-primario;
             }
         }
         .iconWhatsapp{
-            color: $color-antiflash;
-            font-size: 50px;
+            @extend .iconInstagram;
             &:hover{
                 color: $color-secundario;
             }

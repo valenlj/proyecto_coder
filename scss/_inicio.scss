@@ -1,4 +1,7 @@
 
+/**Página de inicio**/
+
+/**Sección 1: Inicio**/
 .inicio__main__section__img__size{
     width: 100%;
     height: 100%;
@@ -28,7 +31,7 @@
         border: 1px solid #000000;
         background: $color-secundario;
         color: $color-jet;
-        box-shadow: $sombra;
+        box-shadow: map-get($sombras, sombra4px);
         &:hover{
             display: flex;
             padding: 7px 37px;
@@ -49,7 +52,7 @@
             border-radius: 30px;
             border: 1px solid #51040B;
             background: #AD1725;
-            box-shadow: $sombra;
+            box-shadow: map-get($sombras, sombra4px);
         }
         .btn-title{
             font-family: $font-principal;
@@ -62,11 +65,12 @@
         }
     }
 }
+/**Sección 2: Valores de la empresa**/
 .inicio__main__section__second{
     display: flex;
     flex-wrap: wrap;
-    background-color: $color-primario;
     justify-content: center;
+    background-color: $color-primario;
     padding-top: 10rem;
     padding-bottom: 10rem;
     .inicio__main__section__second__article{
@@ -76,6 +80,7 @@
         padding: 1rem;
         display: inline-block;
         width: 300px;
+        box-shadow: map-get($sombras, sombra6px);
         .inicio__main__section__second__article__img__flor{
             display: flex;
             margin-bottom: 1.5rem;
@@ -101,9 +106,10 @@
         }
     }
 }
+/**Sección 3: Puntos de venta**/
 .inicio__main__section__third{
     background-color: $color-terciario;
-    padding-top: 8rem;
+    padding-top: 7rem;
     display: flex;
     justify-content: center;
     .inicio__main__section__third__div{
@@ -180,6 +186,7 @@
         }
     }
 }
+/**Sección 4: Redirección a la página Descubre**/
 .inicio__main__section__fourth{
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -203,7 +210,7 @@
             border-radius: 30px;
             border: 1px solid #000000;
             background: $color-primario;
-            box-shadow: $sombra;
+            box-shadow: map-get($sombras, sombra4px);
             &:hover{
                 border-radius: 30px;
                 background: #FFEA7D;
@@ -214,7 +221,7 @@
                 border-radius: 30px;
                 border: 1px solid #A68B03;
                 background: #FFD500;
-                box-shadow: $sombra;
+                box-shadow: map-get($sombras, sombra4px);
             }
             .btn-title2{
                 font-family: $font-principal;

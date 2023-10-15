@@ -1,5 +1,6 @@
 /**Página de Nosotros**/
 
+/**Sobre la empresa**/
 .nosotros__main__section__first__h1{
     margin: 5rem;
     text-align: center;
@@ -9,13 +10,25 @@
     flex-wrap: wrap;
     background-color: #fff597f1;
     margin: 2rem 0;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     .text__nosotros{
         font-family: $font-principal;
         font-weight: 300;
         font-size: 1.1rem;
+        word-spacing: 3px;
+        line-height: 1.7;
     }
 }
+/**Tipografía**/
+.title__nosotros{
+    font-family: $font-principal;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+
+/**Sobre el proceso de producción de miel**/
+
+/**Título**/
 .nosotros__main__div{
     margin: 5rem;
     text-align: center;
@@ -25,18 +38,11 @@
         font-size: 2.5rem;
     }
 }
-.title__nosotros{
-    font-family: $font-principal;
-    font-weight: 800;
-    font-size: 3.5rem;
-}
+/**Etapas del proceso**/
 .nosotros__main__section__second{
+    @include contenedorFlex(row, wrap, space-evenly);
     margin: 1rem;
-    display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
     .nosotros__main__section__second__article__red{
         background-color: $color-secundario;
         padding: 1.5rem;
@@ -45,19 +51,12 @@
         width: 230px;
     }
     .nosotros__main__section__second__article__yellow{
+        @extend .nosotros__main__section__second__article__red;
         background-color: $color-primario;
-        padding: 1.5rem;
-        border-radius: 15px;
-        display: inline-block;
-        width: 230px;
     }
     .nosotros__main__section__second__article__blue{
+        @extend .nosotros__main__section__second__article__red;
         background-color: $color-terciario;
-        margin: 0.5rem;
-        padding: 1.5rem;
-        border-radius: 15px;
-        display: inline-block;
-        width: 230px;
     }
     .title__nosotros__h3{
         font-family: $font-principal;
@@ -70,6 +69,7 @@
         font-size: 1rem;
     }
 }
+/**Video**/
 .nosotros__main__div__video{
     margin: 5rem;
     text-align: center;

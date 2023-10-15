@@ -6,9 +6,12 @@ $color-terciario: #2176AE;
 $color-jet: #2a2a2a;
 $color-antiflash: #EBEBEB;
 
-/**Sombras**/
-$sombra: 4px 4px 0px -1px #000000;
-$sombra-descubre: 6px 6px 0px -1px #000;
+/**Mapa de sombras**/
+$sombras: (
+    sombra4px: 4px 4px 0px -1px #000000,
+    sombra6px: 6px 6px 0px -1px #000,
+    sombraHover:4px 4px 0px -1px #6a6a6a
+);
 
 /**Tipografía**/
 $font-principal: 'Bricolage Grotesque', sans-serif;
