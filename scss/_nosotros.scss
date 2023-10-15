@@ -1,3 +1,4 @@
+/**Página de Nosotros**/
 
 .nosotros__main__section__first__h1{
     margin: 5rem;
@@ -10,7 +11,7 @@
     margin: 2rem 0;
     padding: 3rem 1rem;
     .text__nosotros{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 300;
         font-size: 1.1rem;
     }
@@ -19,13 +20,13 @@
     margin: 5rem;
     text-align: center;
     .title__nosotros__h2{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 800;
         font-size: 2.5rem;
     }
 }
 .title__nosotros{
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: $font-principal;
     font-weight: 800;
     font-size: 3.5rem;
 }
@@ -37,21 +38,21 @@
     flex-direction: row;
     justify-content: space-evenly;
     .nosotros__main__section__second__article__red{
-        background-color: #DB5461;
+        background-color: $color-secundario;
         padding: 1.5rem;
         border-radius: 15px;
         display: inline-block;
         width: 230px;
     }
     .nosotros__main__section__second__article__yellow{
-        background-color: #FFE24F;
+        background-color: $color-primario;
         padding: 1.5rem;
         border-radius: 15px;
         display: inline-block;
         width: 230px;
     }
     .nosotros__main__section__second__article__blue{
-        background-color: #2176AE;
+        background-color: $color-terciario;
         margin: 0.5rem;
         padding: 1.5rem;
         border-radius: 15px;
@@ -59,12 +60,12 @@
         width: 230px;
     }
     .title__nosotros__h3{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 600;
         font-size: 1.5rem;
     }
     .text__nosotros__p{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 300;
         font-size: 1rem;
     }
@@ -72,7 +73,7 @@
 .nosotros__main__div__video{
     margin: 5rem;
     text-align: center;
-    background-color: #2a2a2a;
+    background-color: $color-jet;
     padding: 6rem;
     border-radius: 15px;
     display: flex;
@@ -82,6 +83,8 @@
         height: 315px;
     }
 }
+
+/**Responsive**/
 @media screen and (max-width: 768px){
     .nosotros__main__section__first__h1{
         margin: 4rem 1rem;

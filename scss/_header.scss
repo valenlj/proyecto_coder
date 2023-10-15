@@ -1,6 +1,6 @@
 header{
     padding: 0.5rem 4rem 0.2rem;
-    border-bottom: #2a2a2a 2px solid;
+    border-bottom: $color-jet 2px solid;
     .header__img{
         width: 60px;
         height: 50px;
@@ -14,7 +14,7 @@ header{
             padding: 0.2rem 0.8rem;
             margin: 0.5rem;
             border-radius: 20px;
-            border: 1px solid #2A2A2A;
+            border: 1px solid $color-jet;
             background: #FDFCF0;
             &:hover{
                 border-radius: 20px;
@@ -29,11 +29,11 @@ header{
                 color: #464429;
             }
             .font-nav{
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: $font-principal;
                 font-weight: 500;
                 font-size: 1.2rem;
                 text-decoration: none;
-                color: #2a2a2a;
+                color: $color-jet;
                 &:hover{
                     color: #464429;
                 }
@@ -45,7 +45,7 @@ header{
         align-items: center; 
         list-style: none;
         .icon{
-            color: #2A2A2A;
+            color: $color-jet;
             font-size: 35px; 
             margin-left: 10px; 
             margin-bottom: 5px;

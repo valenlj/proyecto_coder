@@ -1,6 +1,6 @@
 footer{
-    background-color: #2a2a2a ;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: $color-jet ;
+    font-family: $font-principal;
     font-size: 1rem;
     font-weight: 300;    
     display: block;
@@ -18,7 +18,7 @@ footer{
             .footer__nav__ul__list__a__red{
                 text-decoration: none;
                 margin: 0 10px;
-                color: #EBEBEB;
+                color: $color-antiflash;
                 &:hover{
                     color: #AD1725;
                 }
@@ -26,17 +26,17 @@ footer{
             .footer__nav__ul__list__a__blue{
                 text-decoration: none;
                 margin: 0 10px;
-                color: #EBEBEB;
+                color: $color-antiflash;
                 &:hover{
-                    color: #2176AE;
+                    color: $color-terciario;
                 }
             }
             .footer__nav__ul__list__a__yellow{
                 text-decoration: none;
                 margin: 0 10px;
-                color: #EBEBEB;
+                color: $color-antiflash;
                 &:hover{
-                    color: #FFE24F;
+                    color: $color-primario;
                 }
             }
         }
@@ -46,31 +46,31 @@ footer{
         justify-content: center;
         gap: 15px;
         .iconInstagram{
-            color: #EBEBEB;
+            color: $color-antiflash;
             font-size: 50px;
             &:hover{
-                color: #DB5461;
+                color: $color-secundario;
             }
         }
         .iconFacebook{
-            color: #EBEBEB;
+            color: $color-antiflash;
             font-size: 50px;
             &:hover{
-                color: #2176AE;
+                color: $color-terciario;
             }
         }
         .iconLinkedin{
-            color: #EBEBEB;
+            color: $color-antiflash;
             font-size: 50px;
             &:hover{
-                color: #FFE24F;
+                color: $color-primario;
             }
         }
         .iconWhatsapp{
-            color: #EBEBEB;
+            color: $color-antiflash;
             font-size: 50px;
             &:hover{
-                color: #DB5461;
+                color: $color-secundario;
             }
         }
     }

@@ -12,12 +12,12 @@
     align-items: flex-end;
     gap: 20px;
     .title__section__first{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 800;
         font-size: 3.5rem;
     }
     .text__section__first{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 300;
         font-size: 1.3rem;
     }
@@ -25,10 +25,10 @@
         padding: 7px 37px;
         gap: 10px;
         border-radius: 30px;
-        border: 1px solid #2a2a2a;
-        background: var(--primary-indianred, #DB5461);
-        color: #2a2a2a;
-        box-shadow: 4px 4px 0px -1px #000000;
+        border: 1px solid #000000;
+        background: $color-secundario;
+        color: $color-jet;
+        box-shadow: $sombra;
         &:hover{
             display: flex;
             padding: 7px 37px;
@@ -49,13 +49,13 @@
             border-radius: 30px;
             border: 1px solid #51040B;
             background: #AD1725;
-            box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.64);
+            box-shadow: $sombra;
         }
         .btn-title{
-            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: $font-principal;
             font-weight: 600;
             font-size: 1.5rem;
-            color: #2a2a2a;
+            color: $color-jet;
             &:hover{
                 color: #000;
             }
@@ -65,7 +65,7 @@
 .inicio__main__section__second{
     display: flex;
     flex-wrap: wrap;
-    background-color: #FFE24F;
+    background-color: $color-primario;
     justify-content: center;
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -89,20 +89,20 @@
             margin-bottom: 1.5rem;
         }
         .subtitle__section__second{
-            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: $font-principal;
             font-weight: 700;
             font-size: 2rem;
             word-spacing: 20px;
         }
         .text__section__second{
-            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: $font-principal;
             font-weight: 300;
             font-size: 1rem;
         }
     }
 }
 .inicio__main__section__third{
-    background-color: #2176AE;
+    background-color: $color-terciario;
     padding-top: 8rem;
     display: flex;
     justify-content: center;
@@ -126,10 +126,10 @@
                 height: 450px;
             }
             .subtitle__section__third{
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: $font-principal;
                 font-weight: 700;
                 font-size: 2.5rem;
-                color: #EBEBEB;
+                color: $color-antiflash;
             }
         }
         .inicio__main__section__third__div__dos{
@@ -138,10 +138,10 @@
             justify-content: center;
             gap: 10px;
             .subtext__section__third{
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: $font-principal;
                 font-weight: 200;
                 font-size: 1.2rem;
-                color: #2a2a2a;
+                color: $color-jet;
             }
             .inicio__main__section__third__div__li__uno{
                 display: flex;
@@ -149,7 +149,7 @@
                 gap: 10px;
                 .inicio__main__section__third__div__uno__list{
                     padding: 1rem 8rem 1rem 1rem;
-                    background-color: #EBEBEB;
+                    background-color: $color-antiflash;
                     border-radius: 15px;
                     list-style-type: none;
                 }
@@ -160,13 +160,13 @@
                 gap: 10px;
                 .inicio__main__section__third__div__dos__list{
                     padding: 1rem;
-                    background-color: #EBEBEB;
+                    background-color: $color-antiflash;
                     border-radius: 15px;
                     list-style-type: none;
                 }
             }
             .text__section__h3{
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: $font-principal;
                 font-weight: 600;
                 font-size: 1.2rem;
             }
@@ -184,12 +184,12 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
     .subtitle__section__fourth{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 700;
         font-size: 2.5rem;
     }
     .text__section__fourth{
-        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: $font-principal;
         font-weight: 300;
         font-size: 1.2rem;
     }
@@ -201,9 +201,9 @@
         .main__section__article__button2{
             padding: 10px 60px;
             border-radius: 30px;
-            border: 1px solid #2a2a2a;
-            background: #FFE24F;
-            box-shadow: 4px 4px 0px -1px #000;
+            border: 1px solid #000000;
+            background: $color-primario;
+            box-shadow: $sombra;
             &:hover{
                 border-radius: 30px;
                 background: #FFEA7D;
@@ -214,13 +214,13 @@
                 border-radius: 30px;
                 border: 1px solid #A68B03;
                 background: #FFD500;
-                box-shadow: 4px 4px 0px -1px rgba(0, 0, 0, 0.60);
+                box-shadow: $sombra;
             }
             .btn-title2{
-                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: $font-principal;
                 font-weight: 600;
                 font-size: 1.5rem;
-                color: #2a2a2a;
+                color: $color-jet;
                 &:hover{
                     color: #000;
                 }
@@ -230,6 +230,7 @@
     }
 }
 
+/**Responsive**/
 @media screen and (max-width: 768px){
 
     .inicio__main__section__first__article{
