@@ -8,9 +8,27 @@
     border-radius: 30px;
     display: inline-block;
     width: 400px;
+    border: 1px solid $color-jet;
+    box-shadow: map-get($sombras, sombra4px)
 }
 .productos__main__section__article__second{
     @extend .productos__main__section__article__first;
+    background-color: #ff6573;
+}
+
+/**Carrusel**/
+.productos__main__section__article__first__mobile{
+    background-color: $color-primario;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 30px;
+    display: inline-block;
+    width: 400px;
+    border: 1px solid $color-jet;
+    box-shadow: map-get($sombras, sombra4px)
+}
+.productos__main__section__article__second__mobile{
+    @extend .productos__main__section__article__first__mobile;
     background-color: #ff6573;
 }
 
@@ -43,7 +61,11 @@
 /**Responsive**/
 @media screen and (max-width: 768px){
 
-    .productos__main__div {
-        margin-left: 0;
+    .productos__main__section__article__first{
+        display: none;
     }
+    .productos__main__section__article__second{
+        display: none;
+    }
+
 }

@@ -158,6 +158,8 @@
                     background-color: $color-antiflash;
                     border-radius: 15px;
                     list-style-type: none;
+                    border: 1px solid $color-jet;
+                    box-shadow: map-get($sombras, sombra4px);
                 }
             }
             .inicio__main__section__third__div__li__dos{
@@ -169,6 +171,8 @@
                     background-color: $color-antiflash;
                     border-radius: 15px;
                     list-style-type: none;
+                    border: 1px solid $color-jet;
+                    box-shadow: map-get($sombras, sombra4px);
                 }
             }
             .text__section__h3{
@@ -256,11 +260,19 @@
             margin: 2rem;
         }
     }
-    .inicio__main__section__third__uno__map{
-            width: 350px;
-            height: 240px;
-            
+    .inicio__main__section__third{
+        .inicio__main__section__third__div{
+            .inicio__main__section__third__div__uno{
+                .inicio__main__section__third__uno__map{
+                    width: 350px;
+                    height: 240px;
+                        
+                }
+            }
+        }
+        
     }
+    
     .inicio__main__section__third__div__li{
         align-items: center;
         flex-direction: column;

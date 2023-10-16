@@ -69,6 +69,22 @@
         font-size: 1rem;
     }
 }
+.nosotros__main__section__second__article__red__mobile{
+    background-color: $color-secundario;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: inline-block;
+    width: 230px;
+}
+.nosotros__main__section__second__article__yellow__mobile{
+    @extend .nosotros__main__section__second__article__red__mobile;
+    background-color: $color-primario;
+}
+.nosotros__main__section__second__article__blue__mobile{
+    @extend .nosotros__main__section__second__article__red__mobile;
+    background-color: $color-terciario;
+}
+
 /**Video**/
 .nosotros__main__div__video{
     margin: 5rem;
@@ -104,4 +120,16 @@
             height: 120px;
         }
     }
+    .nosotros__main__section__second{
+        .nosotros__main__section__second__article__red{
+            display: none;
+        }
+        .nosotros__main__section__second__article__blue{
+            display: none;
+        }
+        .nosotros__main__section__second__article__yellow{
+            display: none;
+        }
+    }
+    
 }
