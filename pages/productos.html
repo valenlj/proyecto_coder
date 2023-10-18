@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="container-fluid">
+        <header class="container-fluid" id="header">
             <div class="escritorio py-1">
                 <nav class="row">
                     <div class="col-md-1">
@@ -58,7 +58,7 @@
         <main class="container">
             <div class="row">  
                 <div class="my-5 px-4">
-                    <h1 class="title__producto__h1">Explorá nuestra colección de mieles naturales</h1>
+                    <h1 class="title__producto__h1 mb-5">Explorá nuestra colección de mieles naturales</h1>
                     <p class="text__producto__h1">Te presentamos las variedades de miel artesanal que elaboramos con dedicación y cuidado para brindarte la mejor experiencia.</p>
                 </div>
                 <div id="carouselExample" class="carousel slide celular">
@@ -129,6 +129,11 @@
                     <h3 class="p-text">Si estás interesado en compras al por mayor, ¡contáctanos para obtener ofertas especiales y descuentos exclusivos!</h3>
                 </section>
             </div> 
+            <div class="div__icon escritorio">
+                <a href="#header" id="volver" class="hidden">
+                    <i class="fa-solid fa-circle-chevron-up div__icon__up"></i>
+                </a>
+            </div>
         </main>
         <footer class="container-fluid">
             <nav class="footer__nav row">
@@ -150,5 +155,6 @@
             </nav>
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/principal.js"></script>
     </body>
 </html>

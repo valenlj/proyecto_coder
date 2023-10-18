@@ -6,16 +6,29 @@ body{
     background-color: $color-body;
     scroll-behavior: smooth;
 }
+
+.div__icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    .div__icon__up{
+        font-size: 50px;
+        color: #9a0312;
+    }
+    .hidden{
+        display: none;
+    }
+}
 .escritorio{
     display: none;
 }
 @media screen and (min-width: 768px){
-.escritorio{
-    display:flex;
-    flex-direction: column-reverse;
-}
-.celular{
-        display: none;
+    .escritorio{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .celular{
+            display: none;
 
-}
+    }
 }

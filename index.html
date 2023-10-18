@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="container-fluid">
+        <header class="container-fluid" id="header">
             <div class="escritorio py-1">
                 <nav class="row">
                     <div class="col-md-1">
@@ -56,7 +56,7 @@
             </div>
         </header>
         <main class="container-fluid p-0 m-0">
-            <section id="inicio" class="container-fluid ps-0">
+            <section class="container-fluid ps-0">
                 <div class="row ps-0">
                     <div class="col-sm-6 d-sm-none d-md-none d-xl-inline col-xl-6 img-fluid">
                         <img class="inicio__main__section__img__size img-fluid" src="./assets/img/mieldripping.png" alt="Imagen de cuchara de miel en blanco y negro">
@@ -72,19 +72,19 @@
             </section>
             <section class="inicio__main__section__second container-fluid">
                 <div class="row">
-                    <div class="col-md-4 d-flex justify-content-center">
+                    <div class="col-md-4 d-flex justify-content-center p-0">
                         <article class="inicio__main__section__second__article">
                             <h2 class="subtitle__section__second">Nuestros valores</h2><img class="inicio__main__section__second__article__img__flor img-fluid" src="./assets/img/flor2.png" alt="Imagen de una mano sosteniendo una flor en blanco y negro">
                             <p class="text__section__second">Creemos en mantener intacta la <strong>pureza de la miel</strong>, por lo que cada paso, desde la recolección hasta el envasado, se realiza con la mayor atención a los detalles y el compromiso con <strong>prácticas sostenibles</strong>. Nuestra misión es brindarte una experiencia que no solo satisfaga tu paladar, sino que también celebre la maravilla natural de la miel en su forma más auténtica.</p>
                         </article>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center">
+                    <div class="col-md-4 d-flex justify-content-center p-0">
                         <article class="inicio__main__section__second__article">
                             <h2 class="subtitle__section__second">Proceso artesanal</h2><img class="inicio__main__section__second__article__img__ahumador img-fluid" src="./assets/img/sahumador2.png" alt="Imagen de un ahumador en blanco y negro">
                             <p class="text__section__second">Utilizamos <strong>métodos tradicionales</strong> y respetuosos con el entorno para garantizar que cada gota de miel conserve su frescura y bondad. Luego, nuestro equipo de apicultores y artesanos lleva a cabo un <strong>proceso meticuloso</strong> de extracción y envasado, preservando la integridad de la miel en cada etapa para que puedas disfrutarla en su máxima expresión.</p>
                         </article>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center">
+                    <div class="col-md-4 d-flex justify-content-center p-0">
                         <article class="inicio__main__section__second__article">
                             <h2 class="subtitle__section__second">Compromiso ambiental</h2><img class="inicio__main__section__second__article__img__tierra img-fluid" src="./assets/img/mundo.png" alt="Imagen del planeta tierra en blanco y negro">
                             <p class="text__section__second">Creemos en devolver a la naturaleza lo que nos brinda. Es por eso que nos dedicados a la <strong>sostenibilidad</strong> y a minimizar nuestro impacto en el <strong>medio ambiente</strong>. Trabajamos en colaboración con comunidades locales y practicamos la <strong>apicultura responsable</strong> para proteger la salud de las abejas. Al escogernos, apoyás un ciclo de cuidado y gratitud hacia la tierra que nos sustenta.</p>
@@ -137,9 +137,9 @@
                     </div>
                 </div>
             </section>
-            <div class="inicio__main__div__icon">
-                <a href="#inicio">
-                    <i class="fa-solid fa-circle-chevron-up inicio__main__div__icon__up"></i>
+            <div class="div__icon escritorio">
+                <a href="#header" id="volver" class="hidden">
+                    <i class="fa-solid fa-circle-chevron-up div__icon__up"></i>
                 </a>
             </div>
         </main>
@@ -163,5 +163,6 @@
             </nav>
         </footer>
         <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/principal.js"></script>
     </body>
 </html>

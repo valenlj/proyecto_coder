@@ -2,7 +2,7 @@
 
 /**Sobre la empresa**/
 .nosotros__main__section__first__h1{
-    margin: 5rem;
+    margin: 4rem;
     text-align: center;
 }
 .nosotros__main__section__first__div{
@@ -49,6 +49,7 @@
         border-radius: 15px;
         display: inline-block;
         width: 230px;
+        border: 1px solid $color-jet;
     }
     .nosotros__main__section__second__article__yellow{
         @extend .nosotros__main__section__second__article__red;
@@ -75,6 +76,7 @@
     border-radius: 15px;
     display: inline-block;
     width: 230px;
+    border: 1px solid $color-jet;
 }
 .nosotros__main__section__second__article__yellow__mobile{
     @extend .nosotros__main__section__second__article__red__mobile;
@@ -102,15 +104,11 @@
 
 /**Responsive**/
 @media screen and (max-width: 768px){
-    .nosotros__main__section__first__h1{
-        margin: 4rem 1rem;
-        text-align: left;
-    }
     .nosotros__main__section__second{
         margin: 2rem;
     }
     .nosotros__main__div{
-        margin: 1rem;
+        margin: 5rem;
     }
     .nosotros__main__div__video{
         margin: 1rem;
@@ -122,14 +120,13 @@
     }
     .nosotros__main__section__second{
         .nosotros__main__section__second__article__red{
-            display: none;
+            width:auto;
         }
         .nosotros__main__section__second__article__blue{
-            display: none;
+            width:auto;
         }
         .nosotros__main__section__second__article__yellow{
-            display: none;
+            width:auto;
         }
     }
-    
 }

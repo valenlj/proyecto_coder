@@ -80,9 +80,7 @@
         padding: 1rem;
         display: inline-block;
         width: 300px;
-        box-shadow: map-get($sombras, sombra6px);
-        animation: appear 1s ease forwards;
-        animation-delay: 0s;
+        box-shadow: map-get($sombras, sombra6px); 
         .inicio__main__section__second__article__img__flor{
             display: flex;
             margin-bottom: 1.5rem;
@@ -105,16 +103,6 @@
             font-family: $font-principal;
             font-weight: 300;
             font-size: 1rem;
-        }
-        @keyframes appear {
-            0% {
-                opacity: 0;
-                transform: translateY(-100px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     }
 }
@@ -209,6 +197,7 @@
     background-image: url("../assets/img/inicio_colmena.png");
     background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
     .subtitle__section__fourth{
         font-family: $font-principal;
         font-weight: 700;
@@ -321,15 +310,6 @@
         100% {
             transform: translate(-40px,-100px) scaleX(-1) rotate(0);
         }
-    }
-}
-.inicio__main__div__icon{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    .inicio__main__div__icon__up{
-        font-size: 50px;
-        color: #DB5461;
     }
 }
 

@@ -1,4 +1,10 @@
 /**Página de contacto**/
+.imagen{
+    background-image: url(../assets/img/onda.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
 
 /**Formulario**/
 .contacto__main__form__div__input__name{
@@ -30,7 +36,7 @@
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     font-size: 14px; 
-    width: 400px;
+    width: 370px;
     height: 300px;   
     text-align: left;
     border-radius: 15px;
@@ -43,7 +49,7 @@
 /**Botones**/
 .contacto__main__div__btn__one{
     margin-top: 0.5rem;
-    width: 195px;
+    width: 180px;
     height: 45px;
     border-radius: 20px;
     background: #1B8BD6;
@@ -61,7 +67,7 @@
 }
 .contacto__main__div__btn__two{
     margin-top: 0.5rem;
-    width: 195px;
+    width: 180px;
     height: 45px;
     border-radius: 20px;
     background: #6094b6;
@@ -94,5 +100,22 @@
 @media screen and (max-width: 768px){
     .contacto__main__img{
         display: none;
+    }
+    .contacto__main__form__div__input__name{
+        width: 150px;
+    }
+    .contacto__main__form__div__input__email{
+        width: 310px;
+    }
+    .contacto__main__form__div__textarea{
+        width: 310px;
+    }
+    .contacto__main__div__btn__one{
+        width: 150px;
+        font-size: 20px;
+    }
+    .contacto__main__div__btn__two{
+        width: 150px;
+        font-size: 20px;
     }
 }

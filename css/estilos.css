@@ -13,6 +13,19 @@ body {
   scroll-behavior: smooth;
 }
 
+.div__icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.div__icon .div__icon__up {
+  font-size: 50px;
+  color: #9a0312;
+}
+.div__icon .hidden {
+  display: none;
+}
+
 .escritorio {
   display: none;
 }
@@ -230,8 +243,6 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   display: inline-block;
   width: 300px;
   box-shadow: 6px 6px 0px -1px #000;
-  animation: appear 1s ease forwards;
-  animation-delay: 0s;
 }
 .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__flor {
   display: flex;
@@ -255,16 +266,6 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /**Sección 3: Puntos de venta**/
@@ -359,6 +360,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   background-image: url("../assets/img/inicio_colmena.png");
   background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 .inicio__main__section__fourth .subtitle__section__fourth {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -471,16 +473,6 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   100% {
     transform: translate(-40px, -100px) scaleX(-1) rotate(0);
   }
-}
-
-.inicio__main__div__icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-.inicio__main__div__icon .inicio__main__div__icon__up {
-  font-size: 50px;
-  color: #DB5461;
 }
 
 /**Responsive**/
@@ -596,11 +588,17 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   .productos__main__section__article__second {
     display: none;
   }
+  .productos__main__section__article__first__mobile, .productos__main__section__article__second__mobile {
+    width: auto;
+  }
+  .productos__main__section__article__second__mobile {
+    width: auto;
+  }
 }
 /**Página de Nosotros**/
 /**Sobre la empresa**/
 .nosotros__main__section__first__h1 {
-  margin: 5rem;
+  margin: 4rem;
   text-align: center;
 }
 
@@ -653,6 +651,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   border-radius: 15px;
   display: inline-block;
   width: 230px;
+  border: 1px solid #2a2a2a;
 }
 .nosotros__main__section__second .nosotros__main__section__second__article__yellow {
   background-color: #FFE24F;
@@ -677,6 +676,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   border-radius: 15px;
   display: inline-block;
   width: 230px;
+  border: 1px solid #2a2a2a;
 }
 
 .nosotros__main__section__second__article__yellow__mobile {
@@ -704,15 +704,11 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 
 /**Responsive**/
 @media screen and (max-width: 768px) {
-  .nosotros__main__section__first__h1 {
-    margin: 4rem 1rem;
-    text-align: left;
-  }
   .nosotros__main__section__second {
     margin: 2rem;
   }
   .nosotros__main__div {
-    margin: 1rem;
+    margin: 5rem;
   }
   .nosotros__main__div__video {
     margin: 1rem;
@@ -723,13 +719,13 @@ footer .footer__nav__icon .iconWhatsapp:hover {
     height: 120px;
   }
   .nosotros__main__section__second .nosotros__main__section__second__article__red, .nosotros__main__section__second .nosotros__main__section__second__article__yellow, .nosotros__main__section__second .nosotros__main__section__second__article__blue {
-    display: none;
+    width: auto;
   }
   .nosotros__main__section__second .nosotros__main__section__second__article__blue {
-    display: none;
+    width: auto;
   }
   .nosotros__main__section__second .nosotros__main__section__second__article__yellow {
-    display: none;
+    width: auto;
   }
 }
 /**Página de descubre**/
@@ -749,7 +745,9 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 .descubre__main__div .text__descubre__p {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  word-spacing: 3px;
+  line-height: 1.4;
 }
 
 /**Cajas**/
@@ -829,6 +827,13 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   }
 }
 /**Página de contacto**/
+.imagen {
+  background-image: url(../assets/img/onda.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
 /**Formulario**/
 .contacto__main__form__div__input__name {
   margin-top: 0.2rem;
@@ -861,7 +866,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   font-size: 14px;
-  width: 400px;
+  width: 370px;
   height: 300px;
   text-align: left;
   border-radius: 15px;
@@ -874,7 +879,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 /**Botones**/
 .contacto__main__div__btn__one {
   margin-top: 0.5rem;
-  width: 195px;
+  width: 180px;
   height: 45px;
   border-radius: 20px;
   background: #1B8BD6;
@@ -893,7 +898,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 
 .contacto__main__div__btn__two {
   margin-top: 0.5rem;
-  width: 195px;
+  width: 180px;
   height: 45px;
   border-radius: 20px;
   background: #6094b6;
@@ -927,6 +932,23 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 @media screen and (max-width: 768px) {
   .contacto__main__img {
     display: none;
+  }
+  .contacto__main__form__div__input__name {
+    width: 150px;
+  }
+  .contacto__main__form__div__input__email {
+    width: 310px;
+  }
+  .contacto__main__form__div__textarea {
+    width: 310px;
+  }
+  .contacto__main__div__btn__one {
+    width: 150px;
+    font-size: 20px;
+  }
+  .contacto__main__div__btn__two {
+    width: 150px;
+    font-size: 20px;
   }
 }
 

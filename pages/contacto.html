@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="container-fluid">
+        <header class="container-fluid" id="header">
             <div class="escritorio py-1">
                 <nav class="row">
                     <div class="col-md-1">
@@ -56,45 +56,44 @@
                   </nav>
             </div>
         </header>
-        <main class="my-3 py-5 container">
+        <main class="mt-xl-3 p-5 container-fluid imagen d-flex justify-content-xl-center">
             <div class="row">
-            <div class="col-md-6 col-sm-4">
-                <section>
-                    <h1 class="title__contacto">Conectá con nosotros</h1>
+                <section class="col-md-12 col-xl-6 col-sm-6 ms-md-5 my-md-4 p-md-3 p-0">
+                    <div>
+                        <h1 class="title__contacto">Conectá con nosotros</h1>
+                    </div>
+                    <form class="" action="404.html" method="post">
+                        <div class="d-flex gap-2">
+                            <div class="d-flex flex-column">
+                                <label class="text__contacto" for="Nombre" id="labelnombre">Nombre</label>
+                                <input class="contacto__main__form__div__input__name" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" required>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="text__contacto" for="Apellido" id="labelnombre">Apellido</label>
+                                <input class="contacto__main__form__div__input__name" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text__contacto" for="Email" id="labelemail">Email</label>
+                        </div>
+                        <div>
+                            <input class="contacto__main__form__div__input__email" type="email" name="email" id="email" placeholder="ejemplo@hotmail.com" required>
+                        </div>
+                        <div>
+                            <label class="text__contacto" for="Comentario" id="labelcomentario">Dejános tu mensaje</label>
+                        </div>
+                        <div>
+                            <textarea class="contacto__main__form__div__textarea" name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <input class="contacto__main__div__btn__two" type="reset" name="Restablecer" id="Restablecer">
+                            <input class="contacto__main__div__btn__one" type="submit" name="Enviar" id="Enviar">
+                        </div>
+                    </form>
                 </section>
-                <form class="" action="404.html" method="post">
-                    <div class="d-flex gap-2">
-                        <div class="d-flex flex-column">
-                            <label class="text__contacto" for="Nombre" id="labelnombre">Nombre</label>
-                            <input class="contacto__main__form__div__input__name" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" required>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <label class="text__contacto" for="Apellido" id="labelnombre">Apellido</label>
-                            <input class="contacto__main__form__div__input__name" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido" required>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="text__contacto" for="Email" id="labelemail">Email</label>
-                    </div>
-                    <div>
-                        <input class="contacto__main__form__div__input__email" type="email" name="email" id="email" placeholder="ejemplo@hotmail.com" required>
-                    </div>
-                    <div>
-                        <label class="text__contacto" for="Comentario" id="labelcomentario">Dejános tu mensaje</label>
-                    </div>
-                    <div>
-                        <textarea class="contacto__main__form__div__textarea" name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                    </div>
-                    <div class="d-flex gap-3">
-                        <input class="contacto__main__div__btn__two" type="reset" name="Restablecer" id="Restablecer">
-                        <input class="contacto__main__div__btn__one" type="submit" name="Enviar" id="Enviar">
-                    </div>
-                </form>
-            </div>
-            <div class="contacto__main__img col-xl-6 d-md-none d-xl-inline">
-                <img class="img-fluid" src="../assets/img/contactoAbeja.png" alt="Imagen de una abeja apoyada sobre la punta de una flor en blanco y negro">
-            </div>
-
+                <div class="contacto__main__img col-xl-5 d-md-none d-xl-inline">
+                    <img class="img-fluid" src="../assets/img/contactoAbeja.png" alt="Imagen de una abeja apoyada sobre la punta de una flor en blanco y negro">
+                </div>
             </div>
         </main>
         <footer class="container-fluid">
