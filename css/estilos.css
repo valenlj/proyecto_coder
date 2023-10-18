@@ -10,6 +10,7 @@
 
 body {
   background-color: #FDFCF0;
+  scroll-behavior: smooth;
 }
 
 .escritorio {
@@ -229,6 +230,8 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   display: inline-block;
   width: 300px;
   box-shadow: 6px 6px 0px -1px #000;
+  animation: appear 1s ease forwards;
+  animation-delay: 0s;
 }
 .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__flor {
   display: flex;
@@ -252,6 +255,16 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1rem;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /**Sección 3: Puntos de venta**/

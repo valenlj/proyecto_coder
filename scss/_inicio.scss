@@ -81,6 +81,8 @@
         display: inline-block;
         width: 300px;
         box-shadow: map-get($sombras, sombra6px);
+        animation: appear 1s ease forwards;
+        animation-delay: 0s;
         .inicio__main__section__second__article__img__flor{
             display: flex;
             margin-bottom: 1.5rem;
@@ -103,6 +105,16 @@
             font-family: $font-principal;
             font-weight: 300;
             font-size: 1rem;
+        }
+        @keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 }
