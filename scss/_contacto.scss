@@ -4,7 +4,7 @@
 .contacto__main__form__div__input__name{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
-    font-size: 12px;
+    font-size: 14px;
     width: 160px;
     height: 40px;
     padding-left: 0.3rem;
@@ -16,7 +16,7 @@
 .contacto__main__form__div__input__email{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
-    font-size: 12px;
+    font-size: 14px;
     width: 340px; 
     height: 40px;
     padding-left: 0.3rem;
@@ -25,11 +25,11 @@
     background: $color-antiflash;
     box-shadow: map-get($sombras, sombra4px);   
 }
-.contacto__main__form__div__input__message{
+.contacto__main__form__div__textarea{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
-    font-size: 12px; 
+    font-size: 14px; 
     width: 400px;
     height: 300px;   
     text-align: left;
@@ -37,6 +37,7 @@
     border: 1px solid $color-jet;
     background: $color-antiflash;
     box-shadow: map-get($sombras, sombra4px);
+    resize: none;
 }
 
 /**Botones**/

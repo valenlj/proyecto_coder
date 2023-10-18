@@ -833,7 +833,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 .contacto__main__form__div__input__name {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-size: 12px;
+  font-size: 14px;
   width: 160px;
   height: 40px;
   padding-left: 0.3rem;
@@ -846,7 +846,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 .contacto__main__form__div__input__email {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-size: 12px;
+  font-size: 14px;
   width: 340px;
   height: 40px;
   padding-left: 0.3rem;
@@ -856,11 +856,11 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   box-shadow: 4px 4px 0px -1px #000000;
 }
 
-.contacto__main__form__div__input__message {
+.contacto__main__form__div__textarea {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  font-size: 12px;
+  font-size: 14px;
   width: 400px;
   height: 300px;
   text-align: left;
@@ -868,6 +868,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   border: 1px solid #2a2a2a;
   background: #EBEBEB;
   box-shadow: 4px 4px 0px -1px #000000;
+  resize: none;
 }
 
 /**Botones**/
