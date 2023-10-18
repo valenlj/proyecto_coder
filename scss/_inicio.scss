@@ -192,8 +192,12 @@
 }
 /**Sección 4: Redirección a la página Descubre**/
 .inicio__main__section__fourth{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+    background-image: url("../assets/img/inicio_colmena.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     .subtitle__section__fourth{
         font-family: $font-principal;
         font-weight: 700;
@@ -238,6 +242,26 @@
             }
         }
 
+    }
+    .inicio__main__section__fourth__img1{
+        transform: translate(2px,30px);
+        width: 60px;
+        height: 60px;
+    }
+    .inicio__main__section__fourth__img2{
+        transform: translate(300px,-200px);
+        width: 70px;
+        height: 70px;
+    }
+    .inicio__main__section__fourth__img3{
+        transform: translate(-50px,-200px);
+        width: 120px;
+        height: 120px;
+    }
+    .inicio__main__section__fourth__img4{
+        transform: translate(250px,-150px);
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -285,5 +309,12 @@
     .inicio__main__section__fourth__article{
         margin: 1rem;
         margin-left: 2rem;
+    }
+    .inicio__main__section__fourth{
+        background-image: url('../assets/img/inicioColmena_Mobile.png');
+        background-position: bottom;
+        background-size: contain;
+        padding-bottom: 13rem;
+        padding-top: 8rem;
     }
 }
