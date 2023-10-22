@@ -1,0 +1,35 @@
+
+
+.error__main__div{
+    display: flex;
+    .error__main__div__h1{
+        font-family: $font-principal;
+        font-size: 2rem;
+        font-weight: 700;
+
+    }
+    .error__main__div__h2{
+        font-family: $font-principal;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+    .error__main__div__p{
+        font-family: $font-principal;
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: flex;
+    }
+    .error__main__div__button{
+        border-radius: 20px;
+        padding: 1rem;
+        border: 1px solid $color-jet;
+        box-sizing: map-get($sombras, sombra4px);
+        .error__button__a{
+            color: $color-jet;
+            font-family: $font-principal;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}

@@ -1067,5 +1067,36 @@ footer .footer__nav__icon .iconWhatsapp:hover {
     font-size: 20px;
   }
 }
+.error__main__div {
+  display: flex;
+}
+.error__main__div .error__main__div__h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.error__main__div .error__main__div__h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.error__main__div .error__main__div__p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: flex;
+}
+.error__main__div .error__main__div__button {
+  border-radius: 20px;
+  padding: 1rem;
+  border: 1px solid #2a2a2a;
+  box-sizing: 4px 4px 0px -1px #000000;
+}
+.error__main__div .error__main__div__button .error__button__a {
+  color: #2a2a2a;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=estilos.css.map */
