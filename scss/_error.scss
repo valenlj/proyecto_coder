@@ -2,6 +2,7 @@
 
 .error__main__div{
     display: flex;
+    flex-direction: column;
     .error__main__div__h1{
         font-family: $font-principal;
         font-size: 2rem;
@@ -20,16 +21,36 @@
         font-weight: 400;
         display: flex;
     }
+    
+}
+.error__main__div__two__button{
+    display: flex;
     .error__main__div__button{
+        display: flex;
+        align-items: center;
         border-radius: 20px;
+        height: 1rem;
         padding: 1rem;
+        background-color: $color-terciario;
         border: 1px solid $color-jet;
-        box-sizing: map-get($sombras, sombra4px);
+        box-shadow: map-get($sombras, sombra4px);
+        &:hover{
+            background-color: #4c9cd1;
+            box-shadow: 4px 4px 0px -1px #686868;
+        }
+        &:active{
+            color: $color-antiflash;
+            background-color: #1776b1;
+            box-shadow: 4px 4px 0px -1px #1d1d1d;
+        }
         .error__button__a{
             color: $color-jet;
             font-family: $font-principal;
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: 400;
+            &:hover{
+                color: $color-antiflash;
+            }
         }
     }
 }

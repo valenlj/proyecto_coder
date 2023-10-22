@@ -1069,6 +1069,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 }
 .error__main__div {
   display: flex;
+  flex-direction: column;
 }
 .error__main__div .error__main__div__h1 {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -1086,17 +1087,37 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   font-weight: 400;
   display: flex;
 }
-.error__main__div .error__main__div__button {
-  border-radius: 20px;
-  padding: 1rem;
-  border: 1px solid #2a2a2a;
-  box-sizing: 4px 4px 0px -1px #000000;
+
+.error__main__div__two__button {
+  display: flex;
 }
-.error__main__div .error__main__div__button .error__button__a {
+.error__main__div__two__button .error__main__div__button {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  height: 1rem;
+  padding: 1rem;
+  background-color: #2176AE;
+  border: 1px solid #2a2a2a;
+  box-shadow: 4px 4px 0px -1px #000000;
+}
+.error__main__div__two__button .error__main__div__button:hover {
+  background-color: #4c9cd1;
+  box-shadow: 4px 4px 0px -1px #686868;
+}
+.error__main__div__two__button .error__main__div__button:active {
+  color: #EBEBEB;
+  background-color: #1776b1;
+  box-shadow: 4px 4px 0px -1px #1d1d1d;
+}
+.error__main__div__two__button .error__main__div__button .error__button__a {
   color: #2a2a2a;
   font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
+}
+.error__main__div__two__button .error__main__div__button .error__button__a:hover {
+  color: #EBEBEB;
 }
 
 /*# sourceMappingURL=estilos.css.map */
