@@ -1070,28 +1070,31 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 .error__main__div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.error__main__div .error__main__div__h1 {
+.error__main__div .error__main__div__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.error__main__div .error__main__div__container .error__main__div__h1 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }
-.error__main__div .error__main__div__h2 {
+.error__main__div .error__main__div__container .error__main__div__h2 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.error__main__div .error__main__div__p {
+.error__main__div .error__main__div__container .error__main__div__p {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
   display: flex;
 }
-
-.error__main__div__two__button {
-  display: flex;
-}
-.error__main__div__two__button .error__main__div__button {
+.error__main__div .error__main__div__button {
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -1101,22 +1104,22 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   border: 1px solid #2a2a2a;
   box-shadow: 4px 4px 0px -1px #000000;
 }
-.error__main__div__two__button .error__main__div__button:hover {
+.error__main__div .error__main__div__button:hover {
   background-color: #4c9cd1;
   box-shadow: 4px 4px 0px -1px #686868;
 }
-.error__main__div__two__button .error__main__div__button:active {
+.error__main__div .error__main__div__button:active {
   color: #EBEBEB;
   background-color: #1776b1;
   box-shadow: 4px 4px 0px -1px #1d1d1d;
 }
-.error__main__div__two__button .error__main__div__button .error__button__a {
+.error__main__div .error__main__div__button .error__button__a {
   color: #2a2a2a;
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
-.error__main__div__two__button .error__main__div__button .error__button__a:hover {
+.error__main__div .error__main__div__button .error__button__a:hover {
   color: #EBEBEB;
 }
 
