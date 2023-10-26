@@ -40,7 +40,7 @@
 }
 /**Etapas del proceso**/
 .nosotros__main__section__second{
-    @include contenedorFlex(row, wrap, space-evenly);
+    @include contenedorFlex(row, wrap, center);
     margin: 1rem;
     gap: 20px;
     .nosotros__main__section__second__article__red{
@@ -48,7 +48,7 @@
         padding: 1.5rem;
         border-radius: 15px;
         display: inline-block;
-        width: 230px;
+        width: 240px;
         border: 1px solid $color-jet;
     }
     .nosotros__main__section__second__article__yellow{

@@ -40,7 +40,7 @@
             gap: 10px;
             border-radius: 30px;
             border: 1px solid rgba(137, 46, 46, 0.85);
-            background: rgba(204, 28, 44, 0.46);
+            background: #EB7984;
             box-shadow: 4px 4px 0px -1px #AD1725;
         }
         &:active{
@@ -77,9 +77,9 @@
         margin: 0 1rem;
         background-color: #FDFCF0;
         border-radius: 20px;
-        padding: 1rem;
+        padding: 2rem;
         display: inline-block;
-        width: 300px;
+        width: 350px;
         box-shadow: map-get($sombras, sombra6px); 
         .inicio__main__section__second__article__img__flor{
             display: flex;
@@ -97,12 +97,13 @@
             font-family: $font-principal;
             font-weight: 700;
             font-size: 2rem;
-            word-spacing: 20px;
+            word-spacing: 40px;
         }
         .text__section__second{
             font-family: $font-principal;
             font-weight: 300;
             font-size: 1rem;
+            line-height: 25px;
         }
     }
 }
@@ -328,6 +329,7 @@
         padding-top: 5rem;
         padding-bottom: 5rem;
         .inicio__main__section__second__article{
+            width: 250px;
             padding: 1.5rem;
             margin: 2rem;
         }

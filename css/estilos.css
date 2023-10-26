@@ -27,6 +27,12 @@ body .div__icon .hidden {
   display: none;
 }
 
+/**Negritas**/
+.p__strong {
+  font-weight: 500;
+  color: #000;
+}
+
 /**Animaciones**/
 .slide-in-left {
   animation: slide-in-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -218,7 +224,8 @@ footer {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  display: block;
+  display: flex;
+  justify-content: space-around;
   padding: 3rem;
 }
 footer .footer__nav {
@@ -228,9 +235,8 @@ footer .footer__nav {
 }
 footer .footer__nav .footer__nav__ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 0.5rem;
+  margin: 0 2rem 1rem;
   list-style: none;
 }
 footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__red, footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__yellow, footer .footer__nav .footer__nav__ul .footer__nav__ul__list__a__blue {
@@ -267,6 +273,9 @@ footer .footer__nav__icon .iconLinkedin:hover {
 }
 footer .footer__nav__icon .iconWhatsapp:hover {
   color: #DB5461;
+}
+footer .footer__nav__div__p {
+  color: #EBEBEB;
 }
 
 @media screen and (max-width: 768px) {
@@ -318,7 +327,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   gap: 10px;
   border-radius: 30px;
   border: 1px solid rgba(137, 46, 46, 0.85);
-  background: rgba(204, 28, 44, 0.46);
+  background: #EB7984;
   box-shadow: 4px 4px 0px -1px #AD1725;
 }
 .inicio__main__section__first__article .main__section__article__button1:active {
@@ -355,9 +364,9 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   margin: 0 1rem;
   background-color: #FDFCF0;
   border-radius: 20px;
-  padding: 1rem;
+  padding: 2rem;
   display: inline-block;
-  width: 300px;
+  width: 350px;
   box-shadow: 6px 6px 0px -1px #000;
 }
 .inicio__main__section__second .inicio__main__section__second__article .inicio__main__section__second__article__img__flor {
@@ -376,12 +385,13 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  word-spacing: 20px;
+  word-spacing: 40px;
 }
 .inicio__main__section__second .inicio__main__section__second__article .text__section__second {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
   font-size: 1rem;
+  line-height: 25px;
 }
 
 /**Sección 3: Puntos de venta**/
@@ -606,6 +616,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
     padding-bottom: 5rem;
   }
   .inicio__main__section__second .inicio__main__section__second__article {
+    width: 250px;
     padding: 1.5rem;
     margin: 2rem;
   }
@@ -651,22 +662,6 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   background-color: #ff6573;
 }
 
-/**Carrusel**/
-.productos__main__section__article__first__mobile, .productos__main__section__article__second__mobile {
-  background-color: #FFE24F;
-  padding: 1.5rem;
-  margin: 1rem;
-  border-radius: 30px;
-  display: inline-block;
-  width: 400px;
-  border: 1px solid #2a2a2a;
-  box-shadow: 4px 4px 0px -1px #000000;
-}
-
-.productos__main__section__article__second__mobile {
-  background-color: #ff6573;
-}
-
 /**Tipografía**/
 .title__producto {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -697,20 +692,6 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 }
 
 /**Responsive**/
-@media screen and (max-width: 768px) {
-  .productos__main__section__article__first, .productos__main__section__article__second {
-    display: none;
-  }
-  .productos__main__section__article__second {
-    display: none;
-  }
-  .productos__main__section__article__first__mobile, .productos__main__section__article__second__mobile {
-    width: auto;
-  }
-  .productos__main__section__article__second__mobile {
-    width: auto;
-  }
-}
 /**Página de Nosotros**/
 /**Sobre la empresa**/
 .nosotros__main__section__first__h1 {
@@ -757,7 +738,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 1rem;
   gap: 20px;
 }
@@ -766,7 +747,7 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   padding: 1.5rem;
   border-radius: 15px;
   display: inline-block;
-  width: 230px;
+  width: 240px;
   border: 1px solid #2a2a2a;
 }
 .nosotros__main__section__second .nosotros__main__section__second__article__yellow {
@@ -994,41 +975,47 @@ footer .footer__nav__icon .iconWhatsapp:hover {
 
 /**Botones**/
 .contacto__main__div__btn__one {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
   width: 180px;
   height: 45px;
   border-radius: 20px;
-  background: #1B8BD6;
+  background: #33E430;
   box-shadow: 4px 4px 0px -1px #000000;
-  color: #F5F5F5;
+  color: #2a2a2a;
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
 }
 .contacto__main__div__btn__one:hover {
-  background-color: #38aaf6;
+  background-color: #9BE39A;
   color: #2a2a2a;
   box-shadow: 4px 4px 0px -1px #6a6a6a;
 }
+.contacto__main__div__btn__one:active {
+  background-color: #23B820;
+}
 
 .contacto__main__div__btn__two {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
   width: 180px;
   height: 45px;
   border-radius: 20px;
-  background: #6094b6;
+  background: #FFE24F;
   box-shadow: 4px 4px 0px -1px #000000;
-  color: #F5F5F5;
+  color: #2a2a2a;
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
 }
 .contacto__main__div__btn__two:hover {
-  background-color: #8abddf;
+  background-color: rgba(255, 228, 92, 0.7137254902);
   color: #2a2a2a;
   box-shadow: 4px 4px 0px -1px #6a6a6a;
+}
+.contacto__main__div__btn__two:active {
+  background-color: #E4BE00;
 }
 
 /**Tipografía**/
@@ -1092,7 +1079,6 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  display: flex;
 }
 .error__main__div .error__main__div__button {
   display: flex;
@@ -1118,9 +1104,6 @@ footer .footer__nav__icon .iconWhatsapp:hover {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-}
-.error__main__div .error__main__div__button .error__button__a:hover {
-  color: #EBEBEB;
 }
 
 /*# sourceMappingURL=estilos.css.map */

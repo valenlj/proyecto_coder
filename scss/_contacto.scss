@@ -48,39 +48,45 @@
 
 /**Botones**/
 .contacto__main__div__btn__one{
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 1rem 0;
     width: 180px;
     height: 45px;
     border-radius: 20px;
-    background: #1B8BD6;
+    background: #33E430;
     box-shadow: map-get($sombras, sombra4px);
-    color: #F5F5F5;
+    color: $color-jet;
     font-family: $font-principal;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     &:hover{
-        background-color: #38aaf6;
-        color: #2a2a2a;
+        background-color: #9BE39A;
+        color: $color-jet;
         box-shadow: map-get($sombras, sombraHover);
+    }
+    &:active{
+        background-color: #23B820;
     }
 }
 .contacto__main__div__btn__two{
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 1rem 0;
     width: 180px;
     height: 45px;
     border-radius: 20px;
-    background: #6094b6;
+    background: $color-primario;
     box-shadow: map-get($sombras, sombra4px);
-    color: #F5F5F5;
+    color: $color-jet;
     font-family: $font-principal;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     &:hover{
-        background-color: #8abddf;
-        color: #2a2a2a;
+        background-color: #ffe45cb6;
+        color: $color-jet;
         box-shadow: map-get($sombras, sombraHover);
+    }
+    &:active{
+        background-color: #E4BE00;
     }
 }
 
