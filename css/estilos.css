@@ -357,6 +357,7 @@ footer .footer__nav__div__p {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #FFE24F;
+  gap: 20px;
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -405,7 +406,6 @@ footer .footer__nav__div__p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
   margin-bottom: 2rem;
   padding-bottom: 5rem;
@@ -430,7 +430,7 @@ footer .footer__nav__div__p {
 }
 .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 10px;
 }
@@ -440,31 +440,20 @@ footer .footer__nav__div__p {
   font-size: 1.2rem;
   color: #2a2a2a;
 }
-.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__uno {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__uno .inicio__main__section__third__div__uno__list {
-  padding: 1rem 8rem 1rem 1rem;
-  background-color: #EBEBEB;
-  border-radius: 15px;
-  list-style-type: none;
-  border: 1px solid #2a2a2a;
-  box-shadow: 4px 4px 0px -1px #000000;
-}
-.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__dos {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__li__dos .inicio__main__section__third__div__dos__list {
+.inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__ul .inicio__main__section__third__div__ul__list {
   padding: 1rem;
   background-color: #EBEBEB;
   border-radius: 15px;
   list-style-type: none;
   border: 1px solid #2a2a2a;
   box-shadow: 4px 4px 0px -1px #000000;
+  display: inline-block;
+  width: 300px;
 }
 .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .text__section__h3 {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -615,14 +604,13 @@ footer .footer__nav__div__p {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  .inicio__main__section__second .inicio__main__section__second__article {
-    width: 250px;
-    padding: 1.5rem;
-    margin: 2rem;
-  }
   .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno .inicio__main__section__third__uno__map {
     width: 350px;
     height: 240px;
+  }
+  .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .inicio__main__section__third__div__li {
     align-items: center;
@@ -643,6 +631,30 @@ footer .footer__nav__div__p {
     background-size: contain;
     padding-bottom: 13rem;
     padding-top: 8rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .inicio__main__section__first__article .title__section__first {
+    font-size: 2.5rem;
+  }
+  .inicio__main__section__first__article .text__section__first {
+    font-size: 1rem;
+  }
+  .inicio__main__section__second .inicio__main__section__second__article {
+    width: 250px;
+    padding: 1.5rem;
+    margin: 2rem;
+  }
+  .inicio__main__section__third .inicio__main__section__third__div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__uno .inicio__main__section__third__uno__map {
+    width: 300px;
+    height: 200px;
+  }
+  .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .inicio__main__section__third__div__ul .inicio__main__section__third__div__ul__list {
+    width: 250px;
   }
 }
 /**Página de productos**/
