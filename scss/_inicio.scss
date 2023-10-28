@@ -140,10 +140,9 @@
             }
         }
         .inicio__main__section__third__div__dos{
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
+            @include contenedorFlex(row,nowrap,center);
             gap: 10px;
+            align-content: center;
             .subtext__section__third{
                 font-family: $font-principal;
                 font-weight: 200;

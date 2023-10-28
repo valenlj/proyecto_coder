@@ -316,9 +316,11 @@ footer .footer__nav__div__p {
 }
 .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 10px;
+  align-content: center;
 }
 .inicio__main__section__third .inicio__main__section__third__div .inicio__main__section__third__div__dos .subtext__section__third {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -635,8 +637,6 @@ footer .footer__nav__div__p {
 /**Etapas del proceso**/
 .nosotros__main__section__second {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   margin: 1rem;
   gap: 20px;
@@ -713,15 +713,6 @@ footer .footer__nav__div__p {
   .nosotros__main__div__video .nosotros__video {
     width: 230px;
     height: 120px;
-  }
-  .nosotros__main__section__second .nosotros__main__section__second__article__red, .nosotros__main__section__second .nosotros__main__section__second__article__yellow, .nosotros__main__section__second .nosotros__main__section__second__article__blue {
-    width: auto;
-  }
-  .nosotros__main__section__second .nosotros__main__section__second__article__blue {
-    width: auto;
-  }
-  .nosotros__main__section__second .nosotros__main__section__second__article__yellow {
-    width: auto;
   }
 }
 /**Página de descubre**/
