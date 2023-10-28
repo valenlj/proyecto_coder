@@ -916,6 +916,12 @@ footer .footer__nav__div__p {
   font-size: 3.5rem;
 }
 
+.subtitle__contacto {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 .text__contacto {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
