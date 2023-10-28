@@ -7,11 +7,12 @@
     <link rel="icon" href="../assets/img/logo.png" type="image/png">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="container-fluid">
-        <div class="escritorio py-1 fade-in">
+        <div class="escritorio py-1" data-aos="fade">
             <nav class="row">
                 <div class="col-md-1">
                     <a href="../index.html">
@@ -55,7 +56,7 @@
         </div>
     </header>
     <main class="container modal-fullscreen-md-down modal-fullscreen-sm-down modal-fullscreen-xl-down">
-        <div class="row d-flex justify-content-center scale-up-center">
+        <div class="row d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="100">
             <div class="col-md-10 mt-5 mb-5 error__main__div">
                 <div class="error__main__div__container">
                     <img src="../assets/img/ripAbeja.png" alt="dos abejas y una lápida en blanco y negro" class="img-fluid">                  
@@ -92,5 +93,9 @@
         </nav>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
