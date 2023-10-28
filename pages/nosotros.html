@@ -10,6 +10,7 @@
         <link rel="icon" href="../assets/img/logo.png" type="image/png">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://kit.fontawesome.com/a018ebfa3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -128,27 +129,27 @@
                 <h2 class="title__nosotros__h2 scale-up-center">El secreto detrás de nuestra miel</h2>
             </div>
             <section class="nosotros__main__section__second row">
-                <article class="nosotros__main__section__second__article__red col-md-2 slit-in-vertical">
+                <article class="nosotros__main__section__second__article__red col-md-2" data-aos="fade-up" data-aos-delay="150">
                     <h3 class="title__nosotros__h3">Recolección</h3>
                     <img class="img-fluid" src="../assets/img/recoleccion.png" alt="Imagen de abejas sobre las celdas de un cuadro">
                     <p class="text__nosotros__p pt-3">Nuestra aventura comienza en el hermoso paisaje donde nuestras colmenas prosperan. Durante la etapa de recolección, nuestros apicultores expertos trabajan en estrecha armonía con las abejas, recolectando el néctar de las flores más exquisitas. Este proceso es fundamental para asegurar la pureza y calidad de nuestra miel. Cada gota de néctar es recogida con cuidado y respeto por la naturaleza.</p>
                 </article>
-                <article class="nosotros__main__section__second__article__yellow col-md-2 slit-in-vertical">         
+                <article class="nosotros__main__section__second__article__yellow col-md-2"data-aos="fade-up" data-aos-delay="200">         
                     <h3 class="title__nosotros__h3">Extracción</h3>       
                     <img class="img-fluid" src="../assets/img/extraccion.png" alt="Imagen de un apicultor insepccionando a las abejas">
                     <p class="text__nosotros__p pt-3">Una vez que las abejas han hecho su trabajo y transformado el néctar en deliciosa miel, llega el momento de la extracción. En nuestras instalaciones, el equipo de producción utiliza métodos suaves y no invasivos para separar la miel de los panales. Esto garantiza que conservemos todas las propiedades naturales y beneficiosas de la miel.</p>
                 </article>
-                <article class="nosotros__main__section__second__article__blue col-md-2 slit-in-vertical">
+                <article class="nosotros__main__section__second__article__blue col-md-2"data-aos="fade-up" data-aos-delay="250">
                     <h3 class="title__nosotros__h3">Filtración</h3>
                     <img class="img-fluid" src="../assets/img/filtracion.jpg" alt="Imagen de un depósito">
                     <p class="text__nosotros__p pt-3">La pureza es esencial para nosotros. Después de la extracción, la miel pasa por un proceso de filtración cuidadoso para eliminar cualquier impureza o partícula no deseada. Esto asegura que cada tarro de miel que llega a tu hogar esté limpio y claro, listo para disfrutar.</p>
                 </article>
-                <article class="nosotros__main__section__second__article__yellow col-md-2 slit-in-vertical">
+                <article class="nosotros__main__section__second__article__yellow col-md-2"data-aos="fade-up" data-aos-delay="300">
                     <h3 class="title__nosotros__h3">Envasado</h3>
                     <img class="img-fluid" src="../assets/img/envasado.png" alt="Imagen de varios frascos de miel envasados">
                     <p class="text__nosotros__p pt-3">La miel recién extraída es envasada con cariño en nuestros tarros distintivos. Cada etiqueta lleva consigo la historia de nuestra empresa y el esfuerzo dedicado a cada lote de miel que producimos. Nuestros tarros son un tributo a la calidad y la dedicación que ponemos en cada paso del proceso de producción.</p>
                 </article>
-              <article class="nosotros__main__section__second__article__red col-md-2 slit-in-vertical">
+              <article class="nosotros__main__section__second__article__red col-md-2"data-aos="fade-up" data-aos-delay="350">
                     <h3 class="title__nosotros__h3">Distribución</h3>
                     <img class="img-fluid" src="../assets/img/distribucion.png" alt="Imagen de un hombre repartiendo cajas">
                     <p class="text__nosotros__p pt-3">Finalmente, nuestras mieles, ricas en sabor y nutrientes, están listas para llegar a tu mesa. Trabajamos con distribuidores de confianza y tiendas locales para asegurarnos de que puedas disfrutar de la miel más fresca y deliciosa en cada bocado. Cada tarro es un testimonio de nuestro compromiso con la excelencia en la producción de miel.</p>
@@ -158,7 +159,7 @@
                 <iframe class="nosotros__video" src="https://www.youtube.com/embed/-hWyNRWAaUg?si=nw7Zwwk9dq2LgQIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div> 
             <div class="div__icon escritorio">
-                <a href="#header" id="volver" class="hidden">
+                <a href="#header" data-aos="fade-up">
                     <i class="fa-solid fa-circle-chevron-up div__icon__up"></i>
                 </a>
             </div>
@@ -187,6 +188,9 @@
             </nav>
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/principal.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
